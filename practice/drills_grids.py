@@ -1,0 +1,259 @@
+"""DRILLS — 2D grids (file 04). The Q3 toolkit.
+
+    python practice/drills_grids.py
+
+Tiny grid problems, easiest first. Q3 is usually a grid + careful reading.
+
+===========================================================================
+THE PICTURE
+===========================================================================
+
+    grid = [[1, 2, 3],        <- row 0
+            [4, 5, 6]]        <- row 1
+             c0 c1 c2
+
+    rows = len(grid)          # 2   how many rows
+    cols = len(grid[0])       # 3   how many columns (length of one row)
+    grid[r][c]                # ROW first, then COLUMN.  grid[1][2] is 6
+
+    for r in range(rows):         # visit every cell
+        for c in range(cols):
+            ... grid[r][c] ...
+
+    grid = [[0] * cols for _ in range(rows)]    # correct way to build
+    grid = [[0] * cols] * rows                  # BUG - all rows are the SAME list
+
+    # neighbours, without falling off the edge
+    directions = [(-1,0),(1,0),(0,-1),(0,1)]                  # up down left right
+    for dr, dc in directions:
+        nr, nc = r + dr, c + dc
+        if 0 <= nr < rows and 0 <= nc < cols:                 # BOUNDS CHECK FIRST
+            ... grid[nr][nc] ...
+
+REMINDERS
+ - grid[r][c] not grid[c][r]
+ - a ROW is one item: grid[i].  A COLUMN must be gathered with a loop.
+ - still true: return AFTER the loop unless you are SEARCHING.
+===========================================================================
+"""
+
+
+# ---------- SECTION A: reading a grid ----------
+
+def size_of(grid):
+    """Return [rows, cols]. [[1,2,3],[4,5,6]] -> [2,3]"""
+    rows = len(grid)
+    cols = len(grid[0])
+    return [rows,cols]
+
+def cell(grid, r, c):
+    """Return the value at row r, column c. ([[1,2],[3,4]], 1, 0) -> 3"""
+    return grid[1][0]
+
+def first_row(grid):
+    """Return the first row. [[1,2],[3,4]] -> [1,2]"""
+    return grid[0]
+
+
+def get_column(grid, j):
+    """Return column j as a list. ([[1,2],[3,4]], 0) -> [1,3]"""
+    for i in grid[0]:
+        for j in grid[1]:
+            return [i,j]
+
+
+def main_diagonal(grid):
+    """Top-left to bottom-right. [[1,2],[3,4]] -> [1,4]"""
+    results = []
+    for i in range(len(grid)):
+        results.append(grid[i][i])
+    return results
+
+
+# ---------- SECTION B: visiting every cell ----------
+
+def grid_total(grid):
+    """Add up every number. [[1,2],[3,4]] -> 10"""
+    total = 0
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            total += grid[i][j]
+    return total    
+
+
+def biggest_in_grid(grid):
+    """The largest value anywhere. [[1,9],[3,4]] -> 9"""
+    best = 0
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            if grid[i][j] > best:
+                best = grid[i][j]
+    return best     
+
+def count_zeros(grid):
+    """How many cells are 0? [[0,1],[0,4]] -> 2"""
+    total =0
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            if grid[i][j] == 0:
+                total += 1
+    return total
+
+def flatten(grid):
+    """All values in one list, row by row. [[1,2],[3,4]] -> [1,2,3,4]"""
+    results =[]
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            results.append(grid[i][j])
+    return results
+
+
+def double_all(grid):
+    """A NEW grid with every value doubled. [[1,2],[3,4]] -> [[2,4],[6,8]]"""
+    results =[]
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            results.append(grid[i][j] *2)
+    return results
+
+
+# ---------- SECTION C: rows and columns ----------
+
+def row_sums(grid):
+    """Sum of each row. [[1,2],[3,4]] -> [3,7]"""
+    results =[]
+    for row in grid:
+        results.append(sum(row))
+    return results    
+
+
+def column_sums(grid):
+    """Sum of each column. [[1,2],[3,4]] -> [4,6]"""
+    result = []
+    for c in range(len(grid[0])):      # OUTER = columns now
+        total = 0                      # fresh total per column
+        for r in range(len(grid)):     # INNER = walk down the rows
+            total += grid[r][c]        # c fixed, r moving
+            result.append(total)           # store this column's total
+    return result
+
+
+def biggest_row_sum(grid):
+    """The largest row total. [[1,2],[3,4]] -> 7"""
+    best = sum(grid[0])
+    for row in grid:
+        if sum(row)> best:
+            best = sum(row)
+    return best
+
+
+def has_zero_row(grid):
+    """True if any row is entirely zeros. [[0,0],[1,2]] -> True"""
+    for i in grid:
+        if sum(i) == 0:
+            return True
+    return False
+
+
+# ---------- SECTION D: building a grid ----------
+
+def make_grid(rows, cols, value):
+    """A rows x cols grid filled with value. (2,3,0) -> [[0,0,0],[0,0,0]]"""
+    ...
+
+
+def identity(n):
+    """n x n grid, 1 on the main diagonal, 0 elsewhere.
+    2 -> [[1,0],[0,1]]"""
+    ...
+
+
+def transpose(grid):
+    """Swap rows and columns. [[1,2,3],[4,5,6]] -> [[1,4],[2,5],[3,6]]
+    HINT: new grid has cols rows and rows cols. new[c][r] = old[r][c]"""
+    ...
+
+
+# ---------- SECTION E: neighbours (the Q3 pattern) ----------
+
+def neighbour_sum(grid, r, c):
+    """Sum of the 4 neighbours (up/down/left/right) that are ON the grid.
+    ([[1,2],[3,4]], 0, 0) -> 5     (right is 2, down is 3)"""
+    rows = len(grid)
+    cols = len(grid[0])
+    directions = [(-1,0), (1,0), (0,-1), (0,1)]
+    total = 0
+
+    for dr, dc in directions:
+        nr = r + dr
+        nc = c + dc
+        if 0 <= nr < rows and 0 <= nc < cols:
+            total += grid[nr][nc]
+    return total
+
+
+def count_neighbour_mines(grid, r, c):
+    """How many of the 8 surrounding cells equal 1?
+    ([[1,1,0],[0,0,0],[0,0,0]], 1, 1) -> 2"""
+    rows = len(grid)
+    cols =len(grid[0])
+    direction =[(-1,-1),(-1,1),(1,-1),(1,1),(-1,0), (1,0), (0,-1), (0,1)]
+    total =0
+
+    for dr ,dc in direction:
+        nr = r + dr
+        nc= c+ dc
+        if 0 <= nr < rows  and 0 <= nc < cols:
+            total += grid[nr][nc]
+    return total
+
+
+def is_edge_cell(grid, r, c):
+    """True if the cell is on the outer border of the grid.
+    ([[1,2],[3,4]], 0, 0) -> True"""
+    row = len(grid)
+    cols = len(grid[0])
+    return r ==0 or r == row- 1 or c == 0 or c == cols -1
+
+
+# ------------------------- self-tests -------------------------
+TESTS = [
+    (size_of, ([[1, 2, 3], [4, 5, 6]],), [2, 3]),
+    (cell, ([[1, 2], [3, 4]], 1, 0), 3),
+    (first_row, ([[1, 2], [3, 4]],), [1, 2]),
+    (get_column, ([[1, 2], [3, 4]], 0), [1, 3]),
+    (get_column, ([[1, 2], [3, 4]], 1), [2, 4]),
+    (main_diagonal, ([[1, 2], [3, 4]],), [1, 4]),
+    (grid_total, ([[1, 2], [3, 4]],), 10),
+    (biggest_in_grid, ([[1, 9], [3, 4]],), 9),
+    (count_zeros, ([[0, 1], [0, 4]],), 2),
+    (flatten, ([[1, 2], [3, 4]],), [1, 2, 3, 4]),
+    (double_all, ([[1, 2], [3, 4]],), [[2, 4], [6, 8]]),
+    (row_sums, ([[1, 2], [3, 4]],), [3, 7]),
+    (column_sums, ([[1, 2], [3, 4]],), [4, 6]),
+    (biggest_row_sum, ([[1, 2], [3, 4]],), 7),
+    (has_zero_row, ([[0, 0], [1, 2]],), True),
+    (has_zero_row, ([[0, 1], [1, 2]],), False),
+    (make_grid, (2, 3, 0), [[0, 0, 0], [0, 0, 0]]),
+    (identity, (2,), [[1, 0], [0, 1]]),
+    (transpose, ([[1, 2, 3], [4, 5, 6]],), [[1, 4], [2, 5], [3, 6]]),
+    (neighbour_sum, ([[1, 2], [3, 4]], 0, 0), 5),
+    (count_neighbour_mines, ([[1, 1, 0], [0, 0, 0], [0, 0, 0]], 1, 1), 2),
+    (is_edge_cell, ([[1, 2], [3, 4]], 0, 0), True),
+    (is_edge_cell, ([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 1, 1), False),
+]
+
+if __name__ == "__main__":
+    passed = 0
+    for fn, args, expected in TESTS:
+        try:
+            got = fn(*args)
+        except Exception as e:  # noqa: BLE001
+            got = f"ERROR: {e}"
+        ok = got == expected
+        passed += ok
+        mark = "PASS" if ok else "FAIL"
+        print(f"[{mark}] {fn.__name__}{args} -> {got!r} (expected {expected!r})")
+    print(f"\n{passed}/{len(TESTS)} tests passed")
+    if passed == len(TESTS):
+        print("\nALL GREEN. Now try practice/q3_implementation.py — the real GCA versions.")
