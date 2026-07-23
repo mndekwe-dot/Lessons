@@ -93,7 +93,22 @@ def spiral_numbers(n):
             [8,9,4],
             [7,6,5]]
     """
-    ...
+    grid = [[0] * n for _ in range(n)]          # empty grid, 0 = "not filled yet"
+    directions = [(0,1), (1,0), (0,-1), (-1,0)] # right, down, left, up (clockwise)
+    r = c = d = 0                               # position (0,0), direction 0 (right)
+
+    for num in range(1, n*n + 1):               # place 1, 2, ... up to n*n
+        grid[r][c] = num                        # drop the number here
+        dr, dc = directions[d]                  # try to keep going same direction
+        nr, nc = r + dr, c + dc
+        # if the next cell is off-grid OR already filled, TURN clockwise
+        if not (0 <= nr < n and 0 <= nc < n and grid[nr][nc] == 0):
+            d = (d + 1) % 4                      # next direction (wraps 3 -> 0)
+            dr, dc = directions[d]
+            nr, nc = r + dr, c + dc
+        r, c = nr, nc                            # move
+    return grid
+
 
 
 # ------------------------- self-tests -------------------------
