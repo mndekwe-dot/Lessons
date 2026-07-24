@@ -29,6 +29,18 @@ it's fast enough depends on the input size `n`** the problem promises. Rough rul
 "Have I seen X before?", counting, pairs summing to a target. This is pattern #1 for a
 reason — reach for it first. Full explanations and code are in file 03.
 
+**Real GCA problem — `sumOfTwo(a, b, v)`:** do arrays `a` and `b` contain one element each that
+together sum to `v`? `([1,2,3], [10,20,4], 5)` → True (1 + 4).
+```python
+def sum_of_two(a, b, v):
+    seen = set(a)                 # everything in a, for instant lookup
+    for x in b:
+        if v - x in seen:         # is x's partner in a?
+            return True
+    return False
+```
+Why a set: checking `v - x in a_list` for every `x` is O(n²); `in a_set` is instant → O(n).
+
 ---
 
 ## 2. Prefix sums — add up any range instantly
@@ -62,6 +74,22 @@ def subarray_sum_count(nums, k):
 Idea: if two running totals differ by exactly `k`, the chunk between them sums to `k`. So we
 remember every running total we've seen and ask "have I seen one that's `k` smaller?"
 
+**Real GCA problem — `countSubarraysSummingToK(nums, k)`:** how many contiguous subarrays add
+up to `k`? `([1,1,1], 2)` → 2 (positions 0–1 and 1–2).
+```python
+def count_subarrays(nums, k):
+    count = 0
+    running = 0
+    seen = {0: 1}                      # a running sum of 0 has been "seen" once (empty start)
+    for x in nums:
+        running += x
+        count += seen.get(running - k, 0)   # earlier sums that leave a gap of k
+        seen[running] = seen.get(running, 0) + 1
+    return count
+```
+Trace `([1,1,1], 2)`: running goes 1, 2, 3. At running 2, `2-2=0` is in seen (once) → count 1.
+At running 3, `3-2=1` is in seen (once) → count 2. Answer 2 ✓
+
 ---
 
 ## 3. Two pointers — sorted data, or scanning from both ends
@@ -84,6 +112,25 @@ def has_pair(nums, target):
 sum and moving `hi` left *always* decreases it — so each step is a confident decision. This
 turns a double loop (O(n²)) into a single sweep (O(n)). Also used for: reversing in place,
 merging two sorted lists, "container"-style problems.
+
+**Real GCA problem — `hasPairWithSum(nums, target)`:** is there any pair adding to `target`?
+`([8,1,5,3], 6)` → True (1 + 5).
+```python
+def has_pair_with_sum(nums, target):
+    nums = sorted(nums)                 # two pointers NEED a sorted list
+    lo, hi = 0, len(nums) - 1
+    while lo < hi:
+        s = nums[lo] + nums[hi]
+        if s == target:
+            return True
+        if s < target:
+            lo += 1                     # too small → move up from the bottom
+        else:
+            hi -= 1                     # too big → move down from the top
+    return False
+```
+Trace sorted `[1,3,5,8]`, target 6: 1+8=9 too big → hi--; 1+5=6 → True ✓
+(You could also do this with a set, Two-Sum style — both are fine.)
 
 ---
 
@@ -112,6 +159,20 @@ see **"longest / shortest contiguous substring or subarray with property X."**
 **Fixed-size window** (size k): slide it along — add the element entering on the right, remove
 the one leaving on the left, update your best. No inner `while` needed.
 
+**Real GCA problem — `maxSumOfWindow(nums, k)`:** the biggest sum of any `k` consecutive items.
+`([2,1,5,1,3,2], 3)` → 9 (5+1+3).
+```python
+def max_sum_of_window(nums, k):
+    window = sum(nums[:k])              # sum of the FIRST k
+    best = window
+    for i in range(k, len(nums)):
+        window += nums[i] - nums[i - k] # add the new one, drop the one that left
+        best = max(best, window)
+    return best
+```
+Why slide instead of re-summing: re-adding k numbers each step is O(n·k); sliding is O(n).
+The window sum only changes by "one in, one out."
+
 ---
 
 ## 5. Sort first, then it's easy
@@ -126,6 +187,19 @@ Many problems collapse once the data is in order:
 Sorting costs O(n log n) — cheap — and often makes the rest trivial. If you're stuck, ask:
 *"would this be easier if the data were sorted?"*
 
+**Real GCA problem — `minDifference(nums)`:** smallest gap between any two values.
+`[4,9,1,32,13]` → 3 (between 1 and 4).
+```python
+def min_difference(nums):
+    nums = sorted(nums)                 # after sorting, the closest pair are NEIGHBOURS
+    best = nums[1] - nums[0]
+    for i in range(1, len(nums)):
+        best = min(best, nums[i] - nums[i - 1])
+    return best
+```
+The insight: once sorted (`[1,4,9,13,32]`), you only compare **adjacent** items — the closest
+pair can't be far apart in the sorted order. Turns an O(n²) all-pairs check into O(n log n).
+
 ---
 
 ## 6. Greedy — grab the best local choice each step
@@ -137,6 +211,23 @@ means: sort, then repeatedly take the largest that fits.
 > **Warning:** greedy is fast but not always correct — the best local move isn't always the
 > best overall. **Test a greedy idea against the given examples before trusting it.** If it
 > fails an example, fall back to another pattern.
+
+**Real GCA problem — `maxMeetings(intervals)`:** given `(start, end)` times, the most meetings
+you can attend without overlap. `[(1,3),(2,4),(3,5)]` → 2.
+```python
+def max_meetings(intervals):
+    intervals = sorted(intervals, key=lambda x: x[1])   # sort by EARLIEST end time
+    count = 0
+    end = float('-inf')                 # when the last chosen meeting finished
+    for s, e in intervals:
+        if s >= end:                    # this meeting starts after the last one ended
+            count += 1
+            end = e                     # take it
+    return count
+```
+The greedy choice: **always take the meeting that ends earliest** — it leaves the most room for
+the rest. Sorting by end time makes this one clean pass. (This particular greedy IS provably
+correct, which is why it's a classic.)
 
 ---
 
@@ -160,7 +251,57 @@ means: sort, then repeatedly take the largest that fits.
 3. `count_pairs_with_sum(nums, target)` — count pairs adding to target (dict).
 4. `equal_split_index(nums)` — index where left sum == right sum (prefix sums).
 
-**Which idea for each?** 1 → sum the first k, then slide (add new, subtract old), tracking the
-max. 2 → sort both, walk two pointers, keep the smallest gap. 3 → the Two Sum "seen partner"
-idea with a count. 4 → total sum, then sweep keeping a left-running sum; the split is where
-`left == total - left - nums[i]`.
+### Worked answers
+
+**1. `max_subarray_sum_k(nums, k)`** — sliding window (fixed size)
+```python
+def max_subarray_sum_k(nums, k):
+    window = sum(nums[:k])
+    best = window
+    for i in range(k, len(nums)):
+        window += nums[i] - nums[i - k]      # slide: add new, drop old
+        best = max(best, window)
+    return best
+```
+
+**2. `smallest_difference(a, b)`** — sort both, then two pointers
+```python
+def smallest_difference(a, b):
+    a, b = sorted(a), sorted(b)
+    i = j = 0
+    best = abs(a[0] - b[0])
+    while i < len(a) and j < len(b):
+        best = min(best, abs(a[i] - b[j]))
+        if a[i] < b[j]:                       # advance the pointer at the smaller value
+            i += 1
+        else:
+            j += 1
+    return best
+```
+
+**3. `count_pairs_with_sum(nums, target)`** — Two Sum "seen partner", with a count
+```python
+from collections import Counter
+def count_pairs_with_sum(nums, target):
+    seen = Counter()
+    count = 0
+    for x in nums:
+        count += seen[target - x]             # every earlier partner forms a pair
+        seen[x] += 1
+    return count
+```
+
+**4. `equal_split_index(nums)`** — prefix sum (left running total)
+```python
+def equal_split_index(nums):
+    total = sum(nums)
+    left = 0
+    for i, x in enumerate(nums):
+        right = total - left - x              # everything except left and nums[i]
+        if left == right:
+            return i
+        left += x
+    return -1
+```
+
+Full runnable versions + more explanation are in `practice/solutions/solutions_q4_explained.md`.

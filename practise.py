@@ -1,13 +1,12 @@
-"""
-**growthInYears(deposit, rate, threshold)**
-Each year a deposit grows by `rate` percent. Return the number of full years needed
-for the deposit to become **strictly more** than `threshold`.
-
-- `growthInYears(100, 20, 170)` → `3` (100 → 120 → 144 → 172.8)
-- `growthInYears(100, 1, 100)` → `1`
-"""
-def solution(deposit,rate,threshold):
-    
+def most_frequent(nums):
+    """The value that appears most often. [3,1,3,2,3,1] -> 3"""
+    ...
+    seen = set()
+    count={}
+    for x in nums:
+        count[x] = count.get(x,0)+0 
+    best =0
+    for i in cou
 
 results=solution([1,2,3], [2,1,3])
 print(results)
