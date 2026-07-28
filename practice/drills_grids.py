@@ -57,9 +57,10 @@ def first_row(grid):
 
 def get_column(grid, j):
     """Return column j as a list. ([[1,2],[3,4]], 0) -> [1,3]"""
-    for i in grid[0]:
-        for j in grid[1]:
-            return [i,j]
+    result = []
+    for i in range(len(grid)):
+        result.append(grid[i][j])
+    return result
 
 
 def main_diagonal(grid):
@@ -112,8 +113,10 @@ def double_all(grid):
     """A NEW grid with every value doubled. [[1,2],[3,4]] -> [[2,4],[6,8]]"""
     results =[]
     for i in range(len(grid)):
+        new_row =[]
         for j in range(len(grid[0])):
-            results.append(grid[i][j] *2)
+            new_row.append(grid[i][j] *2)
+        results.append(new_row)
     return results
 
 
@@ -134,7 +137,7 @@ def column_sums(grid):
         total = 0                      # fresh total per column
         for r in range(len(grid)):     # INNER = walk down the rows
             total += grid[r][c]        # c fixed, r moving
-            result.append(total)           # store this column's total
+        result.append(total)           # store this column's total
     return result
 
 

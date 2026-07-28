@@ -10,19 +10,14 @@ def all_longest_strings(words):
     ["aba", "aa", "ad", "vcd", "aba"] -> ["aba", "vcd", "aba"]"""
     longest = 0                  # "the biggest length seen so far"
     for w in words:
-        if len(w) > longest:                  
-            longest += len(w)        
-    
+        if len(w) > longest:
+            longest = len(w)
+
     result = []            # start with an EMPTY list to collect into
     for w in words:           # walk the list a SECOND time
-        if len(w)==longest:               # does this word's length match the max?
+        if len(w) == longest:               # does this word's length match the max?
             result.append(w)     # add it to the collection
     return result             # return the list, not the number
-
-words =["aba", "aa", "ad", "vcd", "aba"]   
-results = all_longest_strings(words)
-print(results)
-    ...
 
 def add_border(picture):
     """Surround a list of strings with '*' (a real GCA problem).
@@ -34,8 +29,6 @@ def add_border(picture):
         result.append("*" + row + "*")
     result.append(border)          # bottom border
     return result
-
-    ...
 
 
 def sorted_squares(nums):

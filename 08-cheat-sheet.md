@@ -801,7 +801,7 @@ return total
 1. **Set the language to Python 3** before you start.
 2. Scan all 4 questions in the first minute. Start with the one you can solve fastest.
 3. ~**17 minutes per question.** Watch the clock.
-4. **RUN TESTS early and often** — after every few lines, not at the end.
+4. **RUN TESTS early and often** — after every few lines, not at the end. Run the **given examples** from the problem statement first, then test edge cases.
 5. Q3: read twice, write the rules as comments, hand-trace the example.
 6. Test edge cases: empty, one element, all-same, 1×1 grid.
 7. If n ≤ 1000, brute force. Correct-but-slow beats clever-but-broken.
@@ -819,3 +819,18 @@ return total
 - Ratio 3:2 with total 40 → parts of 8 → 24 and 16.
 - "True / False / Cannot say": use ONLY the passage. Not stated → **Cannot say**.
 - 30–60 sec per question max; accuracy over rushing; guess rather than leave blank.
+
+---
+
+# PART 11 — SELF-RELIANCE CHECKLIST
+
+Before checking any solution, ask yourself these 6 questions. If you can answer all 6 from memory, you're ready.
+
+| # | Question | Where in cheat sheet |
+|---|----------|----------------------|
+| 1 | **What type of loop do I need?** (Transform / Filter / Reduce / Best-so-far / Search / Count-each) | Part 1 (6 loop shapes), Part 4 (list shapes L1–L11) |
+| 2 | **What data structure do I need?** (list, dict, set, grid) | Part 4 (lists), Part 5 (dicts/sets), Part 6 (grids) |
+| 3 | **Do I need two passes?** (Count first, then decide) | Part 5, D1: *"Count-then-decide"* — two passes for any totals problem |
+| 4 | **Where does return go?** (AFTER the loop unless SEARCHING) | Part 1 header, Part 8 traps: *"return inside a collecting loop → only first item. After the loop!"* |
+| 5 | **Have I tested with the given examples?** | Exam-day rule #4 (updated): run the **given examples** from the problem first |
+| 6 | **Have I tested edge cases?** (empty input, single element, all-same values) | Exam-day rule #6: test edge cases — empty, one element, all-same, 1×1 grid |

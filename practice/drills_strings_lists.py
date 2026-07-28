@@ -117,10 +117,10 @@ def trimmed(s):
 
 def count_letter(s, letter):
     """How many times does `letter` appear? ("banana","a") -> 3"""
-    count=0
-    for ch in letter:
+    count = 0
+    for ch in s:
         if ch == letter:
-            count =+ 1
+            count += 1
     return count
 
 def swap_letter(s, old, new):
@@ -155,7 +155,7 @@ def add_to_end(nums, x):
 
 def without_last(nums):
     """Return the list without its last item. [1,2,3] -> [1,2]"""
-    return nums[-1]
+    return nums[:-1]
 
 
 def position_of(nums, x):
@@ -200,13 +200,12 @@ def adjacent_sums(nums):
 
 def longest_word_in(sentence):
     """The longest word. "the apple sat" -> "apple" """
-    ...
-    list =sentence.split()
-    best = ()
+    words = sentence.split()
+    best = words[0]
 
-    for x in list:
-        if len(x) > len(best):
-            best = x
+    for w in words:
+        if len(w) > len(best):
+            best = w
     return best
 
 def capitalize_words(sentence):

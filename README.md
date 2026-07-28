@@ -82,4 +82,9 @@ Attempt each problem for at least 10–15 minutes before looking at the answer.
 | `10-my-common-mistakes.md` | **MY** repeating mistakes + pre-submit checklist + error-message decoder |
 | `11-glossary.md` | What the words in problem statements mean (anagram, contiguous, subarray…) |
 | `practice/drills_common_mistakes.py` | 24 tiny drills targeting those exact mistakes — run daily |
+| `practice/gca_q1_basic.py` | Q1 real GCA questions — basic coding (loops, math, conditions) |
+| `practice/gca_q2_data_manipulation.py` | Q2 real GCA questions — data manipulation (lists, strings, counting) |
+| `practice/gca_q3_implementation.py` | Q3 real GCA questions — implementation-heavy (grids, simulation) |
+| `practice/gca_q4_problem_solving.py` | Q4 real GCA questions — problem solving (efficient algorithms) |
 | `practice/` | Runnable Python files: problems + hidden solutions + self-tests |
+| `12-practice-plan.md` | Daily practice schedule — how to practice so you can depend on yourself |
