@@ -4,6 +4,19 @@ Misreading ONE word is the most common way to fail a question. Skim this before 
 
 ---
 
+## Table of Contents
+
+1. [Words about position and order](#words-about-position-and-order)
+2. [Words about parts of things](#words-about-parts-of-things)
+3. [Words about counting and uniqueness](#words-about-counting-and-uniqueness)
+4. [Word puzzles that show up constantly](#word-puzzles-that-show-up-constantly)
+5. [Words about the function itself](#words-about-the-function-itself)
+6. [Words about grids](#words-about-grids)
+7. [Maths words](#maths-words)
+8. [Phrases that tell you the ANSWER'S SHAPE](#phrases-that-tell-you-the-answers-shape)
+
+---
+
 ## Words about position and order
 
 | Word | Means | Example |

@@ -5,6 +5,16 @@ Study the *reasoning*, not just the code — that's what transfers to tomorrow.
 
 ---
 
+## Table of Contents
+
+1. [Task 1 — growthInYears (target 8 min) · difficulty: EASY (Q1)](#task-1--growthinyears-target-8-min--difficulty-easy-q1)
+2. [Task 2 — mostCommonFirstLetter (target 12 min) · difficulty: EASY-MEDIUM (Q2)](#task-2--mostcommonfirstletter-target-12-min--difficulty-easy-medium-q2)
+3. [Task 3 — battleships (target 20 min) · difficulty: MEDIUM (Q3)](#task-3--battleships-target-20-min--difficulty-medium-q3)
+4. [Task 4 — longestEqualSubarray (target 25 min) · difficulty: HARD (Q4)](#task-4--longestequalsubarray-target-25-min--difficulty-hard-q4)
+5. [The takeaway for tomorrow](#the-takeaway-for-tomorrow)
+
+---
+
 ## Task 1 — growthInYears (target 8 min) · difficulty: EASY (Q1)
 
 **Problem:** a deposit grows by `rate` percent each year. Return how many full years until it

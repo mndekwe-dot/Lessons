@@ -9,6 +9,16 @@
 
 ---
 
+## Table of Contents
+
+1. [The two tracks you're considering](#the-two-tracks-youre-considering)
+2. [What carries over from THIS kit](#what-carries-over-from-this-kit)
+3. [After the assessment: what to learn, in order](#after-the-assessment-what-to-learn-in-order)
+4. [Honest advice on timing](#honest-advice-on-timing)
+5. [Free resources for later (bookmark, don't open yet)](#free-resources-for-later-bookmark-dont-open-yet)
+
+---
+
 ## The two tracks you're considering
 
 | | **Python BE & AI App Dev** | **Data Engineering** |

@@ -59,6 +59,23 @@ Read the checklist before starting. Run the checklist again before submitting.
 
 ---
 
+## Table of Contents
+
+1. [THE PRE-SUBMIT CHECKLIST (30 seconds, do it every time)](#the-pre-submit-checklist-30-seconds-do-it-every-time)
+2. [MISTAKE 1 — `return` inside a collecting loop](#mistake-1--return-inside-a-collecting-loop)
+3. [MISTAKE 2 — Hardcoding over the parameter](#mistake-2--hardcoding-over-the-parameter)
+4. [MISTAKE 3 — The 3 zones (setup / work / return)](#mistake-3--the-3-zones-setup--work--return)
+5. [MISTAKE 4 — `len(list)` vs `len(item)`](#mistake-4--lenlist-vs-lenitem)
+6. [MISTAKE 5 — Methods that return `None`](#mistake-5--methods-that-return-none)
+7. [MISTAKE 6 — Function shape vs method shape](#mistake-6--function-shape-vs-method-shape)
+8. [MISTAKE 7 — Indentation / empty function body](#mistake-7--indentation--empty-function-body)
+9. [MISTAKE 8 — `=+` is not `+=`](#mistake-8---is-not-)
+10. [MISTAKE 9 — Missing quotes on text](#mistake-9--missing-quotes-on-text)
+11. [MISTAKE 10 — Testing only the given example](#mistake-10--testing-only-the-given-example)
+12. [THE SILENT BUGS (no error, wrong answer) — the dangerous ones](#the-silent-bugs-no-error-wrong-answer--the-dangerous-ones)
+
+---
+
 ## THE PRE-SUBMIT CHECKLIST (30 seconds, do it every time)
 
 - [ ] Does my function **`return`** something? (Not `print`, not nothing.)

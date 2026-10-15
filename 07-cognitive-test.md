@@ -12,6 +12,29 @@ with answers** at the end. Do the practice under a timer.
 
 # SECTION 1 — NUMERICAL REASONING
 
+---
+
+## Table of Contents
+
+1. [1a. Number sequences — find the rule](#1a-number-sequences--find-the-rule)
+2. [1b. Percentages — the fast tricks](#1b-percentages--the-fast-tricks)
+3. [1c. Ratios](#1c-ratios)
+4. [1d. Averages (mean)](#1d-averages-mean)
+5. [1e. Reading tables / charts](#1e-reading-tables--charts)
+6. [The one rule that matters](#the-one-rule-that-matters)
+7. [Worked example](#worked-example)
+8. [Tips](#tips)
+9. [What to check (run through these)](#what-to-check-run-through-these)
+10. [Worked example (described)](#worked-example-described)
+11. [Odd-one-out](#odd-one-out)
+12. [Matrix (3×3 grid, one cell missing)](#matrix-33-grid-one-cell-missing)
+13. [Matching — the accuracy drill](#matching--the-accuracy-drill)
+14. [Quick logic](#quick-logic)
+15. [ANSWERS](#answers)
+16. [The night-before / morning checklist](#the-night-before--morning-checklist)
+
+---
+
 ## 1a. Number sequences — find the rule
 
 Check these rules **in this order** (first that fits wins):

@@ -4,6 +4,15 @@
 
 ---
 
+## Table of Contents
+
+1. [How to Use This Plan](#how-to-use-this-plan)
+2. [Weekly Schedule (3–5 weeks)](#weekly-schedule-35-weeks)
+3. [The Self-Reliance Checklist](#the-self-reliance-checklist)
+4. [Practice Rules](#practice-rules)
+
+---
+
 ## How to Use This Plan
 
 1. **Do NOT look at solutions until you have tried for 15+ minutes.** If you're truly stuck after 15 min, read the matching section in `08-cheat-sheet.md` (NOT the solution file).

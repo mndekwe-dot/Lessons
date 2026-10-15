@@ -8,36 +8,18 @@ Solutions: solutions/solutions_q2.py
 def all_longest_strings(words):
     """Return ALL strings of maximum length, keeping their order.
     ["aba", "aa", "ad", "vcd", "aba"] -> ["aba", "vcd", "aba"]"""
-    longest = 0                  # "the biggest length seen so far"
-    for w in words:
-        if len(w) > longest:
-            longest = len(w)
-
-    result = []            # start with an EMPTY list to collect into
-    for w in words:           # walk the list a SECOND time
-        if len(w) == longest:               # does this word's length match the max?
-            result.append(w)     # add it to the collection
-    return result             # return the list, not the number
+    ...
 
 def add_border(picture):
     """Surround a list of strings with '*' (a real GCA problem).
     ["abc", "ded"] -> ["*****", "*abc*", "*ded*", "*****"]"""
-    width = len(picture[0]) + 2
-    border = "*" * width
-    result = [border]              # top border already inside
-    for row in picture:
-        result.append("*" + row + "*")
-    result.append(border)          # bottom border
-    return result
+    ...
 
 
 def sorted_squares(nums):
     """Square every number, return the results sorted ascending.
     [-4, -1, 0, 3] -> [0, 1, 9, 16]"""
-    results=[]
-    for x in nums:
-        results.append(x**2)
-    return sorted(results)
+    ...
     
 new_results=sorted_squares([-4, -1, 0, 3])
 print(new_results)    
@@ -45,7 +27,7 @@ print(new_results)
 
 def is_anagram(a, b):
     """Do the two words use exactly the same letters? ("listen","silent") -> True"""
-    return sorted(a) == sorted(b)
+    ...
 
 a = "listen"
 b = "silent"

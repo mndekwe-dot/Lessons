@@ -5,6 +5,18 @@ Take this file slowly — section 2 (counting) is the single most useful thing i
 
 ---
 
+## Table of Contents
+
+1. [What is a dictionary? (the labelled box)](#1-what-is-a-dictionary-the-labelled-box)
+2. [The counting pattern — the most important thing in this file](#2-the-counting-pattern--the-most-important-thing-in-this-file)
+3. [What is a set? (the guest list)](#3-what-is-a-set-the-guest-list)
+4. [Worked examples (real GCA problems)](#4-worked-examples-real-gca-problems)
+5. [Which tool? — phrase → tool](#5-which-tool--phrase--tool)
+6. [Common mistakes with these two](#6-common-mistakes-with-these-two)
+7. [Exercises (in `practice/q4_problem_solving.py`)](#exercises-in-practiceq4_problem_solvingpy)
+
+---
+
 ## 1. What is a dictionary? (the labelled box)
 
 A **list** stores things by **position** — item 0, item 1, item 2. That works when the order

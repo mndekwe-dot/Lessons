@@ -6,6 +6,17 @@ No clever algorithm needed — just careful reading and clean 2D code. Q3 is won
 
 ---
 
+## Table of Contents
+
+1. [A matrix is a list of lists](#1-a-matrix-is-a-list-of-lists)
+2. [The neighbors pattern — MEMORIZE](#2-the-neighbors-pattern--memorize)
+3. [Rows, columns, diagonals](#3-rows-columns-diagonals)
+4. [Simulation problems: "follow the rules"](#4-simulation-problems-follow-the-rules)
+5. [Q3 checklist (this is where passes are won)](#5-q3-checklist-this-is-where-passes-are-won)
+6. [Exercises (in `practice/q3_implementation.py`)](#exercises-in-practiceq3_implementationpy)
+
+---
+
 ## 1. A matrix is a list of lists
 
 A **matrix** (or grid) is just a **list whose items are themselves lists** — each inner list

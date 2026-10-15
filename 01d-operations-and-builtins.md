@@ -6,6 +6,19 @@ gives you for free. Every one listed here shows up on the exam. For each: what i
 
 ---
 
+## Table of Contents
+
+1. [Part A — Math operators](#part-a--math-operators)
+2. [Part B — Number built-in functions](#part-b--number-built-in-functions)
+3. [Part C — Converting between types](#part-c--converting-between-types)
+4. [Part D — Collection built-in functions (used constantly)](#part-d--collection-built-in-functions-used-constantly)
+5. [Part E — Loop helper functions](#part-e--loop-helper-functions)
+6. [Part F — Making collections](#part-f--making-collections)
+7. [Part G — Counter and other handy helpers](#part-g--counter-and-other-handy-helpers)
+8. [Quick "which tool?" reference](#quick-which-tool-reference)
+
+---
+
 ## Part A — Math operators
 
 ```python

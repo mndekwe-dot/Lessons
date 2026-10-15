@@ -10,6 +10,24 @@ loop**, written the clear, explicit way (no shortcuts), with **when to use each 
 
 ---
 
+## Table of Contents
+
+1. [The 3 questions that pick your loop](#the-3-questions-that-pick-your-loop)
+2. [Loop 1 — `for` over a range of numbers](#loop-1--for-over-a-range-of-numbers)
+3. [Loop 2 — `for` over the items of a list or string](#loop-2--for-over-the-items-of-a-list-or-string)
+4. [Loop 3 — `for` with `enumerate` (position AND item together)](#loop-3--for-with-enumerate-position-and-item-together)
+5. [Loop 4 — `for i in range(len(...))` (position, the manual way)](#loop-4--for-i-in-rangelen-position-the-manual-way)
+6. [Loop 5 — `while` (repeat until a condition changes)](#loop-5--while-repeat-until-a-condition-changes)
+7. [Loop 6 — Nested loops (a loop inside a loop)](#loop-6--nested-loops-a-loop-inside-a-loop)
+8. [Loop 7 — Walking two lists together with `zip`](#loop-7--walking-two-lists-together-with-zip)
+9. [`break` and `continue` — controlling any loop](#break-and-continue--controlling-any-loop)
+10. [The 3 things loops do most (memorize these shapes)](#the-3-things-loops-do-most-memorize-these-shapes)
+11. [Same task, 3 different loops (so you see they're equal)](#same-task-3-different-loops-so-you-see-theyre-equal)
+12. [The one-line version (comprehension) — just a folded loop](#the-one-line-version-comprehension--just-a-folded-loop)
+13. [Quick "which loop?" reference](#quick-which-loop-reference)
+
+---
+
 ## The 3 questions that pick your loop
 
 Before writing a loop, ask:

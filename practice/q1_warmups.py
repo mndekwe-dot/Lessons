@@ -7,29 +7,17 @@ Stuck for 15+ minutes? Peek at solutions/solutions_q1.py
 
 def century(year):
     """Which century is the year in? 1905 -> 20, 1700 -> 17, 2001 -> 21."""
-    
-    if year % 100 == 0:
-        return year // 100
-    else:    
-        return (year // 100) + 1
+    ...
 
 
 def sum_odd(n):
     """Sum of all odd numbers from 1 to n (inclusive). sum_odd(7) -> 16."""
-    odd=[]
-    
-    for x in range(1,n+1):
-        if x % 2 == 1:
-            odd.append(x)
-    return sum(odd)
+    ...
 
 
 def reverse_number(n):
-    result = 0
-    while n > 0:
-        result = result * 10 + n % 10   # append last digit to result
-        n = n // 10                     # drop it from n
-    return result
+    """Return the digits of n reversed, as a number. 1234 -> 4321, 5 -> 5."""
+    ...
 
 
 

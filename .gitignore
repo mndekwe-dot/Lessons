@@ -8,3 +8,14 @@ __pycache__/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Live-infrastructure runbook: contains the public/private IPs, SSH users and
+# key names for the Health Living production server. Local study copy only -
+# it must never reach the Lessons remote.
+engineering-curriculum/05-deployment/SERVER_RUNBOOK.md
+engineering-curriculum/
+
+# Imboni infrastructure: live server IP (129.158.42.112) and the production
+# deploy runbook for demo.imboni.tech. Same reason as the Screening runbook.
+engineering-curriculum/05-deployment/08-ORACLE_FREE_SETUP.md
+engineering-curriculum/05-deployment/09-IMBONI_DEPLOY_RUNBOOK.md

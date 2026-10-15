@@ -53,114 +53,156 @@ Fill in each function. Delete the `...` and write the body.
 
 def doubles(nums):
     """Return a new list with every number doubled. [1,2,3] -> [2,4,6]"""
-    ...
+    list =[]
+    for x in nums:
+        list.append(x * 2)
+    return list
 
 
 def only_positive(nums):
     """Return only the numbers greater than 0. [-1,4,0,7] -> [4,7]"""
-    ...
-
+    list = []
+    for x in nums:
+        if x > 0:
+            list.append(x)
+    return list
 
 def word_lengths(words):
     """Return the length of each word. ["hi","there"] -> [2,5]"""
-    ...
-
+    list = []
+    for x in words:
+        list.append(len(x))
+    return list
 
 def shout(words):
     """Return every word in UPPERCASE. ["a","b"] -> ["A","B"]"""
-    ...
-
+    list = []
+    for x in words:
+        y = x.upper()
+        list.append(y)
+    return list  
 
 def count_evens(nums):
     """Return HOW MANY numbers are even. [1,2,3,4] -> 2"""
-    ...
-
+    number = 0
+    for x in nums:
+        if x % 2 == 0:
+            number += 1
+    return number
 
 def total_of_odds(nums):
     """Return the SUM of the odd numbers. [1,2,3,4] -> 4"""
-    ...
-
+    number = 0
+    for x in nums:
+        if x % 2 == 1:
+            number += x
+    return number    
 
 # ---------- SECTION B: best-so-far (use `=`, never `+=`) ----------
 
 def biggest(nums):
     """Return the largest number WITHOUT using max(). [3,9,2] -> 9"""
-    ...
+    best = 0
+    for x in nums:
+        if x > best:
+            best = x
+    return best
 
 
 def longest_word(words):
     """Return the longest word WITHOUT using max(). ["a","abc","ab"] -> "abc" """
-    ...
+    best = ""
+    for x in words:
+        if len(x) > len(best):
+            best = x
+    return best
 
 
 # ---------- SECTION C: len(list) vs len(item) ----------
 
 def how_many_words(words):
     """Return HOW MANY words are in the list. ["a","b","c"] -> 3"""
-    ...
-
+    return len(words)
 
 def first_word_length(words):
     """Return HOW LONG the FIRST word is. ["hello","hi"] -> 5"""
-    ...
+    return len(words[0])
 
 
 def total_letters(words):
     """Return the total number of letters across all words. ["ab","cde"] -> 5"""
-    ...
+    sum = 0
+    for x in words:
+        sum += len(x)
+    return sum
 
 
 # ---------- SECTION D: search loops (return INSIDE is correct here!) ----------
-
 def first_negative(nums):
     """Return the first negative number, or 0 if there is none. [3,-2,5] -> -2"""
-    ...
-
+    for x in nums:
+        if x < 0:
+            return x  # Found the first negative number! Exit immediately.
+            
+    return 0
 
 def has_letter(word, letter):
     """Return True if `letter` appears in `word`, else False. ("cat","a") -> True
     
     return letter in word """
-    ...
-
+    for x in word:
+        if x == letter:
+            return True
+    return False
 
 # ---------- SECTION E: function vs method shape ----------
 
 def sorted_copy(nums):
     """Return a NEW sorted list, leaving `nums` untouched. [3,1,2] -> [1,2,3]"""
-    ...
+    return sorted(nums)
 
 
 def letters_in_order(word):
     """Return the word's letters sorted, as a STRING. "cab" -> "abc" """
-    ...
+    return "".join(sorted(word))
 
 
 def joined(words):
     """Glue the words together with a dash. ["a","b","c"] -> "a-b-c" """
-    ...
+    return "-".join(words)
 
 
 # ---------- SECTION F: predicates (return the comparison directly) ----------
 
 def is_even(n):
     """True if n is even. 4 -> True"""
-    ...
+    if n % 2 == 0:
+        return True
+    return False
 
 
 def is_longer_than(word, n):
     """True if the word has MORE than n letters. ("hello",3) -> True"""
-    ...
+    if len(word) > n:
+        return True
+    return False
 
 
 def same_letters(a, b):
     """True if both words use exactly the same letters. ("listen","silent") -> True"""
-    ...
+    x = sorted(a.strip())
+    y = sorted(b.strip())
+    return x == y
 
 
 def all_same(nums):
     """True if every number in the list is identical. [5,5,5] -> True"""
-    ...
+    first = nums[0]
+    for x in nums:
+        if x != first:  # If any element differs from the first one
+            return False
+
+    return True
 
 
 

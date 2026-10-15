@@ -42,120 +42,72 @@ REMINDERS
 
 def size_of(grid):
     """Return [rows, cols]. [[1,2,3],[4,5,6]] -> [2,3]"""
-    rows = len(grid)
-    cols = len(grid[0])
-    return [rows,cols]
+    ...
 
 def cell(grid, r, c):
     """Return the value at row r, column c. ([[1,2],[3,4]], 1, 0) -> 3"""
-    return grid[1][0]
+    ...
 
 def first_row(grid):
     """Return the first row. [[1,2],[3,4]] -> [1,2]"""
-    return grid[0]
+    ...
 
 
 def get_column(grid, j):
     """Return column j as a list. ([[1,2],[3,4]], 0) -> [1,3]"""
-    result = []
-    for i in range(len(grid)):
-        result.append(grid[i][j])
-    return result
+    ...
 
 
 def main_diagonal(grid):
     """Top-left to bottom-right. [[1,2],[3,4]] -> [1,4]"""
-    results = []
-    for i in range(len(grid)):
-        results.append(grid[i][i])
-    return results
+    ...
 
 
 # ---------- SECTION B: visiting every cell ----------
 
 def grid_total(grid):
     """Add up every number. [[1,2],[3,4]] -> 10"""
-    total = 0
-    for i in range(len(grid)):
-        for j in range(len(grid[0])):
-            total += grid[i][j]
-    return total    
+    ...
 
 
 def biggest_in_grid(grid):
     """The largest value anywhere. [[1,9],[3,4]] -> 9"""
-    best = 0
-    for i in range(len(grid)):
-        for j in range(len(grid[0])):
-            if grid[i][j] > best:
-                best = grid[i][j]
-    return best     
+    ...
 
 def count_zeros(grid):
     """How many cells are 0? [[0,1],[0,4]] -> 2"""
-    total =0
-    for i in range(len(grid)):
-        for j in range(len(grid[0])):
-            if grid[i][j] == 0:
-                total += 1
-    return total
+    ...
 
 def flatten(grid):
     """All values in one list, row by row. [[1,2],[3,4]] -> [1,2,3,4]"""
-    results =[]
-    for i in range(len(grid)):
-        for j in range(len(grid[0])):
-            results.append(grid[i][j])
-    return results
+    ...
 
 
 def double_all(grid):
     """A NEW grid with every value doubled. [[1,2],[3,4]] -> [[2,4],[6,8]]"""
-    results =[]
-    for i in range(len(grid)):
-        new_row =[]
-        for j in range(len(grid[0])):
-            new_row.append(grid[i][j] *2)
-        results.append(new_row)
-    return results
+    ...
 
 
 # ---------- SECTION C: rows and columns ----------
 
 def row_sums(grid):
     """Sum of each row. [[1,2],[3,4]] -> [3,7]"""
-    results =[]
-    for row in grid:
-        results.append(sum(row))
-    return results    
+    ...
 
 
 def column_sums(grid):
     """Sum of each column. [[1,2],[3,4]] -> [4,6]"""
-    result = []
-    for c in range(len(grid[0])):      # OUTER = columns now
-        total = 0                      # fresh total per column
-        for r in range(len(grid)):     # INNER = walk down the rows
-            total += grid[r][c]        # c fixed, r moving
-        result.append(total)           # store this column's total
-    return result
+    ...
 
 
 def biggest_row_sum(grid):
     """The largest row total. [[1,2],[3,4]] -> 7"""
-    best = sum(grid[0])
-    for row in grid:
-        if sum(row)> best:
-            best = sum(row)
-    return best
+    ...
 
 
 def has_zero_row(grid):
     """True if any row is entirely zeros. [[0,0],[1,2]] -> True"""
-    for i in grid:
-        if sum(i) == 0:
-            return True
-    return False
+    ...
 
 
 # ---------- SECTION D: building a grid ----------
@@ -182,41 +134,19 @@ def transpose(grid):
 def neighbour_sum(grid, r, c):
     """Sum of the 4 neighbours (up/down/left/right) that are ON the grid.
     ([[1,2],[3,4]], 0, 0) -> 5     (right is 2, down is 3)"""
-    rows = len(grid)
-    cols = len(grid[0])
-    directions = [(-1,0), (1,0), (0,-1), (0,1)]
-    total = 0
-
-    for dr, dc in directions:
-        nr = r + dr
-        nc = c + dc
-        if 0 <= nr < rows and 0 <= nc < cols:
-            total += grid[nr][nc]
-    return total
+    ...
 
 
 def count_neighbour_mines(grid, r, c):
     """How many of the 8 surrounding cells equal 1?
     ([[1,1,0],[0,0,0],[0,0,0]], 1, 1) -> 2"""
-    rows = len(grid)
-    cols =len(grid[0])
-    direction =[(-1,-1),(-1,1),(1,-1),(1,1),(-1,0), (1,0), (0,-1), (0,1)]
-    total =0
-
-    for dr ,dc in direction:
-        nr = r + dr
-        nc= c+ dc
-        if 0 <= nr < rows  and 0 <= nc < cols:
-            total += grid[nr][nc]
-    return total
+    ...
 
 
 def is_edge_cell(grid, r, c):
     """True if the cell is on the outer border of the grid.
     ([[1,2],[3,4]], 0, 0) -> True"""
-    row = len(grid)
-    cols = len(grid[0])
-    return r ==0 or r == row- 1 or c == 0 or c == cols -1
+    ...
 
 
 # ------------------------- self-tests -------------------------

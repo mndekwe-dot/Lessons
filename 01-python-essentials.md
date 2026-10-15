@@ -3,6 +3,21 @@
 Goal: write small correct programs quickly, without thinking about syntax.
 Everything here appears in **Q1** and is the base for all other questions.
 
+---
+
+## Table of Contents
+
+1. [Variables and types](#1-variables-and-types)
+2. [Conditions](#2-conditions)
+3. [Loops](#3-loops)
+4. [Functions](#4-functions)
+5. [Digits of a number — classic Q1 pattern](#5-digits-of-a-number--classic-q1-pattern)
+6. [min / max / sum — know these cold](#6-min--max--sum--know-these-cold)
+7. [Tracking a "best so far" — the most common loop shape in the whole exam](#7-tracking-a-best-so-far--the-most-common-loop-shape-in-the-whole-exam)
+8. [Exercises (do them in `practice/q1_warmups.py`)](#exercises-do-them-in-practiceq1_warmupspy)
+
+---
+
 ## 1. Variables and types
 
 ```python

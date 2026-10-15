@@ -8,6 +8,15 @@ The lessons teach you the *tools* (loops, dicts, slicing). This file teaches you
 
 ---
 
+## Table of Contents
+
+1. [The 6-step method](#the-6-step-method)
+2. [The 9 solution-finding moves](#the-9-solution-finding-moves)
+3. [Worked example: the method applied to `century` end to end](#worked-example-the-method-applied-to-century-end-to-end)
+4. [When you're stuck for 10+ minutes (the unstick checklist)](#when-youre-stuck-for-10-minutes-the-unstick-checklist)
+
+---
+
 ## The 6-step method
 
 ### Step 1 — Restate the problem in your own words

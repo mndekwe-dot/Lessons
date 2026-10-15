@@ -9,6 +9,21 @@ that" is a condition. This file covers **every kind of condition and comparison*
 
 ---
 
+## Table of Contents
+
+1. [The `if` / `elif` / `else` shapes](#1-the-if--elif--else-shapes)
+2. [Comparison operators (the yes/no questions)](#2-comparison-operators-the-yesno-questions)
+3. [Combining conditions: `and`, `or`, `not`](#3-combining-conditions-and-or-not)
+4. [Chained comparisons (very Pythonic)](#4-chained-comparisons-very-pythonic)
+5. [Membership: `in` and `not in`](#5-membership-in-and-not-in)
+6. [Truthy / falsy — the short way to check "empty" or "zero"](#6-truthy--falsy--the-short-way-to-check-empty-or-zero)
+7. [Conditions as True/False values (predicates)](#7-conditions-as-truefalse-values-predicates)
+8. [Common condition recipes (memorize)](#8-common-condition-recipes-memorize)
+9. [A note on `break`/`continue` with conditions](#9-a-note-on-breakcontinue-with-conditions)
+10. [Quick "which condition tool?" reference](#quick-which-condition-tool-reference)
+
+---
+
 ## 1. The `if` / `elif` / `else` shapes
 
 **Just `if`** — do something only when true, otherwise nothing:

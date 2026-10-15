@@ -8,6 +8,18 @@ These appear in **every single question**. Fluency here = speed on exam day.
 
 ---
 
+## Table of Contents
+
+1. [Indexing and slicing (works on strings AND lists)](#1-indexing-and-slicing-works-on-strings-and-lists)
+2. [String methods you must know](#2-string-methods-you-must-know)
+3. [List operations](#3-list-operations)
+4. [List comprehensions — your speed superpower](#4-list-comprehensions--your-speed-superpower)
+5. [zip — walk two lists together](#5-zip--walk-two-lists-together)
+6. [Classic exam patterns (with plain-English walkthroughs)](#6-classic-exam-patterns-with-plain-english-walkthroughs)
+7. [Exercises (in `practice/q2_data_manipulation.py`)](#exercises-in-practiceq2_data_manipulationpy)
+
+---
+
 ## 1. Indexing and slicing (works on strings AND lists)
 
 **Indexing** = grabbing ONE item by its position. **Positions start at 0**, not 1.

@@ -8,6 +8,23 @@ awareness, but don't stress if it doesn't fully land.
 
 # PART 1 — dictionaries & sets (DO THESE)
 
+---
+
+## Table of Contents
+
+1. [most_frequent — the value appearing most often](#most_frequent--the-value-appearing-most-often)
+2. [contains_close_duplicates — a repeat within k positions?](#contains_close_duplicates--a-repeat-within-k-positions)
+3. [common_elements — values in BOTH lists, sorted, no duplicates](#common_elements--values-in-both-lists-sorted-no-duplicates)
+4. [can_form_note — can note be built from magazine's letters?](#can_form_note--can-note-be-built-from-magazines-letters)
+5. [first_duplicate — first value that repeats](#first_duplicate--first-value-that-repeats)
+6. [max_subarray_sum_k — biggest sum of any window of size k](#max_subarray_sum_k--biggest-sum-of-any-window-of-size-k)
+7. [smallest_difference — closest pair between two lists](#smallest_difference--closest-pair-between-two-lists)
+8. [count_pairs_with_sum — how many pairs add to target](#count_pairs_with_sum--how-many-pairs-add-to-target)
+9. [equal_split_index — index where left sum == right sum](#equal_split_index--index-where-left-sum--right-sum)
+10. [Bottom line for tomorrow](#bottom-line-for-tomorrow)
+
+---
+
 ## most_frequent — the value appearing most often
 `[3,1,3,2,3,1]` → 3
 

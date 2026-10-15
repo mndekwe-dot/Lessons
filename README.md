@@ -10,6 +10,37 @@ You are preparing for **two assessments**, taken in person:
 
 ---
 
+## This repository holds four things
+
+The GCA material below is the oldest part. Three full curricula have grown around it,
+each with its own plan, gated checkpoints and progress tracker.
+
+| | What | Length | Start when |
+|---|---|---|---|
+| **GCA prep** | the numbered files below, `practice/` | — | now / ongoing |
+| [`engineering-curriculum/`](engineering-curriculum/) | Django, React, infra, system design, mobile | 17 weeks | after the GCA |
+| [`cybersecurity/`](cybersecurity/) | foundations → appsec → infra → malware → forensics → law | 8 weeks | after engineering Checkpoint 10 |
+| [`data-science-ml/`](data-science-ml/) | maths → wrangling → classical ML → DL → LLMs → MLOps | 37 weeks | after engineering Checkpoint 12 |
+
+Each has a `CURRICULUM.md` (the plan and the checkpoints) and a `PROGRESS.md` (the
+tracker you fill in). **The progress trackers are the point.** The material was never
+the missing piece — a sequence, a forcing function and a gate were.
+
+> As of today every `PROGRESS.md` is still blank. If you read one thing in this
+> repository, make it [`engineering-curriculum/CURRICULUM.md`](engineering-curriculum/CURRICULUM.md)
+> and fill in a start date.
+
+---
+
+## Table of Contents
+
+1. [The single most important fact about the GCA](#the-single-most-important-fact-about-the-gca)
+2. [Study plan](#study-plan)
+3. [Test-day strategy (memorize this)](#test-day-strategy-memorize-this)
+4. [Files in this kit](#files-in-this-kit)
+
+---
+
 ## The single most important fact about the GCA
 
 The 4 questions are **not random** — they always follow the same difficulty ladder:

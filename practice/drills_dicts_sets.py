@@ -33,13 +33,16 @@ def get_age(ages, name):
     return ages.get(name,0)
 
 
-
 def how_many_keys(d):
     """How many keys does the dictionary have? {"a":1,"b":2} -> 2"""
-    return len(d.keys())
+    return len(d)
+
 def has_key(d, key):
     """True if the key exists in the dictionary. ({"a":1}, "a") -> True"""
-    return key in d
+    for k in d:
+        if k == key:
+            return True
+    return False
 
 
 def all_the_values(d):
@@ -51,93 +54,73 @@ def all_the_values(d):
 
 def count_letters(word):
     """Count each letter. "aba" -> {"a":2, "b":1}"""
-    counts={}
+    count = {}
     for x in word:
-        counts[x] = counts.get(x,0)+1
-    return counts
-
+        count[x] = count.get(x,0) + 1    
+    return count
 
 def count_items(items):
     """Count each item in a list. [1,2,1] -> {1:2, 2:1}"""
-    counts={}
+    counts ={}
     for x in items:
-      counts[x] = counts.get(x,0)+1
+        counts[x]=counts.get(x,0) + 1
     return counts
 
 def count_words(sentence):
     """Count each word in a sentence. "a b a" -> {"a":2, "b":1}
     HINT: split first."""
-    words = sentence.split()
-    counts ={} 
-    for x in words:
-        counts[x]=counts.get(x,0)+1
+    counts ={}
+    for x in sentence.split():
+        counts[x] = counts.get(x,0) + 1
     return counts
-
 
 def length_map(words):
     """Map each word to its length. ["hi","abc"] -> {"hi":2, "abc":3}
     (Not counting — just storing a value per key.)"""
-    counts={}
-    for k in words:
-        counts[k] = len(k)
-    return counts 
-
+    count={}
+    for x in words:
+        count[x] =len(x)
+    return count
 
 
 # ---------- SECTION C: scanning a dictionary ----------
 
 def total_of_values(d):
     """Add up all the values. {"a":1,"b":2} -> 3"""
-    count=0
-    for x,v in d.items():
-        count += v
-    return count
-
+    return sum(d.values())
 
 def key_with_biggest_value(d):
     """Return the key whose value is largest. {"a":1,"b":5,"c":2} -> "b"
     HINT: best-so-far, but track TWO things (the key and its value)."""
-    best = 0
-    best_k = ""
+    biggest_key = None
+    biggest_value = None
 
-    for k,v in d.items():
-        if v > best:
-            best = v
-            best_k = k
-    return best_k
-
+    for key , value in d:
+        if value > biggest_value:
+            biggest_value = value
+            biggest_key = key
+        return biggest_key
 def keys_with_value(d, target):
     """Return all keys whose value equals target, in order.
     ({"a":1,"b":2,"c":1}, 1) -> ["a","c"]"""
-    list =[]
-
-    for x , v in d.items():
-        if v == target:
-            list.append(x)
-    return list
+    ...
 
 
 def appears_once(d):
     """Return all keys whose value is exactly 1, in order.
     {"a":2,"b":1,"c":1} -> ["b","c"]"""
-
-    appear=[]
-
-    for x , v in d.items():
-        if v == 1:
-            appear.append(x)
-    return appear
+    ...
 
 # ---------- SECTION D: sets ----------
 
 def distinct_count(nums):
     """How many DIFFERENT values are there? [1,2,2,3] -> 3"""
-    return len(set(nums))
+    ...
 
 
 def remove_duplicates(nums):
     """Return the distinct values, sorted. [3,1,3,2] -> [1,2,3]"""
-    return sorted(set(nums))
+    ...
 
 
 

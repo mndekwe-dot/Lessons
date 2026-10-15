@@ -7,6 +7,15 @@ Do this mock only after finishing files 01–05. Repeat it a few days later if y
 
 ---
 
+## Table of Contents
+
+1. [Task 1 (target: 8 min)](#task-1-target-8-min)
+2. [Task 2 (target: 12 min)](#task-2-target-12-min)
+3. [Task 3 (target: 20 min)](#task-3-target-20-min)
+4. [Task 4 (target: 25 min)](#task-4-target-25-min)
+
+---
+
 ## Task 1 (target: 8 min)
 
 **growthInYears(deposit, rate, threshold)**

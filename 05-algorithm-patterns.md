@@ -5,6 +5,20 @@ below. (And remember: Q4 is your **bonus** question — 3/4 already passes. Don'
 
 ---
 
+## Table of Contents
+
+0. [When is brute force OK?](#0-when-is-brute-force-ok)
+1. [Dictionary / Set lookups (the most common Q4 — see file 03)](#1-dictionary--set-lookups-the-most-common-q4--see-file-03)
+2. [Prefix sums — add up any range instantly](#2-prefix-sums--add-up-any-range-instantly)
+3. [Two pointers — sorted data, or scanning from both ends](#3-two-pointers--sorted-data-or-scanning-from-both-ends)
+4. [Sliding window — best/longest of a CONTIGUOUS chunk](#4-sliding-window--bestlongest-of-a-contiguous-chunk)
+5. [Sort first, then it's easy](#5-sort-first-then-its-easy)
+6. [Greedy — grab the best local choice each step](#6-greedy--grab-the-best-local-choice-each-step)
+7. [Recognition table — phrase → pattern](#recognition-table--phrase--pattern)
+8. [Exercises (in `practice/q4_problem_solving.py`, second half)](#exercises-in-practiceq4_problem_solvingpy-second-half)
+
+---
+
 ## 0. When is brute force OK?
 
 "Brute force" = the obvious, simple way (often a double loop), even if it's slow. **Whether

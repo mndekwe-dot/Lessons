@@ -7,46 +7,141 @@ Run:  python practice/gca_q2_data_manipulation.py
 
 
 def all_longest_strings(words):
-    """Return ALL strings of maximum length, keeping their order."""
-    ...
+    """Return ALL strings of maximum length, keeping their order.
+
+    Example:
+        words = ["aba", "aa", "ad", "vcd", "aba"]
+        -> ["aba", "vcd", "aba"]
+    """
+    max_lenght =0
+    list=[]
+    for x in words:
+        if len(x) > max_lenght:
+            max_lenght = len(x)
+
+    for y in words:
+        if len(y)==max_lenght:
+            list.append(y)
+    return list
+
 
 def add_border(picture):
-    """Surround a rectangular matrix of characters with a border of asterisks (*)."""
-    ...
+    """Surround a rectangular matrix of characters with a border of asterisks (*).
+
+    Example:
+        picture = ["abc", "ded"]
+        -> ["*****",
+            "*abc*",
+            "*ded*",
+            "*****"]
+    """
+    width = len(picture[0]) + 2
+    border ="*" * width
+    list=[border]
+    for x in picture:
+        list.append("*" + x + "*")
+    list.append(border)
+    return list
 
 def sorted_squares(nums):
-    """Square every number in the array and return the result sorted ascending."""
-    ...
+    """Square every number in the array and return the result sorted ascending.
+
+    Example:
+        nums = [-4, -1, 0, 3, 10]
+        -> [0, 1, 9, 16, 100]
+    """
+    list=[]
+    for x in nums:
+        list.append(x ** 2)
+    return sorted(list)
+
 
 def is_anagram(a, b):
-    """Return True if a and b use exactly the same letters."""
-    ...
+    """Return True if a and b use exactly the same letters.
+
+    Example:
+        a = "listen", b = "silent" -> True
+        a = "rat", b = "car"       -> False
+    """
+    return sorted(a) == sorted(b)
+
 
 def first_digit(s):
-    """Return the first digit character in string s."""
-    ...
+    """Return the first digit character in string s.
+
+    Example:
+        s = "var_1__Int" -> "1"
+        s = "q2q-q"      -> "2"
+    """
+    for x in s:
+      if x.isdigit():
+         return x
+
+
 
 def alternating_sums(a):
-    """Players go alternately to team 1 and team 2. Return [team1_weight, team2_weight]."""
-    ...
+    """Players go alternately to team 1 and team 2. Return [team1_weight, team2_weight].
+
+    Example:
+        a = [50, 60, 60, 45, 70]
+        -> [180, 105]  (Team 1: 50 + 60 + 70 = 180; Team 2: 60 + 45 = 105)
+    """
+    return [sum(a[::2]), sum(a[1::2])]
+
 
 def common_character_count(s1, s2):
     """Return the count of characters that appear in both strings (counted per occurrence).
-    'aab', 'aba' -> 3 (two a's and one b are common)."""
-    ...
+
+    Example:
+        s1 = "aabcc", s2 = "adcaa"
+        -> 3  (two 'a's and one 'c' are common)
+    """
+    s2_list = list(s2)
+    times= 0
+
+    for x in s1:
+        if x in s2_list:
+            times += 1
+            s2_list.remove(x)
+    return times
+
 
 def is_lucky(n):
-    """Return True if the sum of the first half of the digits equals the sum of the second half."""
-    ...
+    """Return True if sum of first half digits equals sum of second half."""
+    s = str(n)
+    half = len(s) // 2
+
+    sum_first = 0
+    for digit in s[:half]:
+        sum_first += int(digit)
+
+    sum_second = 0
+    for digit in s[half:]:
+        sum_second += int(digit)
+
+    return sum_first == sum_second
+
 
 def sort_by_height(a):
-    """Sort the negatives (trees) in ascending order while leaving the non-negatives (people) in place."""
-    ...
+    """Sort the non-negative numbers (people) in ascending order while leaving
+
+    the -1 values (trees) fixed in place.
+
+    Example:
+        a = [-1, 150, 190, 170, -1, -1, 160, 180]
+        -> [-1, 150, 160, 170, -1, -1, 180, 190]
+    """
+    pass
+
 
 def reverse_in_parentheses(input_string):
-    """Reverse the substrings inside each pair of matching parentheses from inside out."""
-    ...
+    """Reverse the substrings inside each pair of matching parentheses from inside out.
 
+    Example:
+        input_string = "foo(bar(baz))blim"
+        -> "foobazrabblim"  ("baz" reverses to "zab" -> "barzab" reverses to "bazrab")
+    """
+    pass
 def palindrome_rearranging(input_string):
     """Return True if it is possible to rearrange the characters of the string to form a palindrome."""
     ...

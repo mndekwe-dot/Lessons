@@ -16,13 +16,7 @@ def matrix_elements_sum(matrix):
      [0,5,0,0],
      [2,0,3,3]] -> 9   (1+1+2 from row 0, +5 from row 1; everything below a 0 is lost)
     """
-    total = 0
-    for c in range(len(matrix[0])):
-        for r in range(len(matrix)):
-            if matrix[r][c] == 0:
-                break
-            total += matrix[r][c]
-    return total 
+    ...
 
 
 def minesweeper(matrix):
@@ -36,22 +30,7 @@ def minesweeper(matrix):
                   [2,1,1],
                   [1,1,1]]
     """
-    rows = len(matrix)
-    cols = len(matrix[0])
-    directions = [(-1,-1),(-1,0),(-1,1),(0,-1),(0,1),(1,-1),(1,0),(1,1)]
-
-    results = []
-    for r in range(rows):
-        new_row =[]
-        for c in range(cols):
-            count = 0
-            for dr,dc in directions:
-                nr, nc = r + dr , c +dc
-                if 0<= nr < rows  and 0 <= nc < cols and matrix[nr][nc]:
-                    count += 1 
-            new_row.append(count)
-        results.append(new_row)
-    return results
+    ...
 
 
 def rotate_image(grid):
@@ -64,14 +43,7 @@ def rotate_image(grid):
                   [8,5,2],
                   [9,6,3]]
     """
-    n =len(grid)
-    results = []
-    for c in range(n):
-        new_row =[]
-        for r in range(n-1,-1,-1):
-            new_row.append(grid[r][c])
-        results.append(new_row) 
-    return results
+    ...
 
 
 def are_similar(a, b):
@@ -93,21 +65,7 @@ def spiral_numbers(n):
             [8,9,4],
             [7,6,5]]
     """
-    grid = [[0] * n for _ in range(n)]          # empty grid, 0 = "not filled yet"
-    directions = [(0,1), (1,0), (0,-1), (-1,0)] # right, down, left, up (clockwise)
-    r = c = d = 0                               # position (0,0), direction 0 (right)
-
-    for num in range(1, n*n + 1):               # place 1, 2, ... up to n*n
-        grid[r][c] = num                        # drop the number here
-        dr, dc = directions[d]                  # try to keep going same direction
-        nr, nc = r + dr, c + dc
-        # if the next cell is off-grid OR already filled, TURN clockwise
-        if not (0 <= nr < n and 0 <= nc < n and grid[nr][nc] == 0):
-            d = (d + 1) % 4                      # next direction (wraps 3 -> 0)
-            dr, dc = directions[d]
-            nr, nc = r + dr, c + dc
-        r, c = nr, nc                            # move
-    return grid
+    ...
 
 
 

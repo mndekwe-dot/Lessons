@@ -40,14 +40,12 @@ def last_char(s):
 
 def first_three(s):
     """Return the first 3 characters. "hello" -> "hel" """
-    return s[0:3]
+    return s[:3]
 
 
 def last_three(s):
     """Return the last 3 characters. "hello" -> "llo" """
-    return s[-3: ]
-
-
+    return s[-3:]
 def middle_part(s):
     """Return everything EXCEPT the first and last character. "hello" -> "ell" """
     return s[1:-1]
@@ -65,43 +63,38 @@ def every_second(s):
 
 def drop_first_two(nums):
     """Return the list without its first two items. [1,2,3,4] -> [3,4]"""
-
     return nums[2:]
 
 
 # ---------- SECTION B: split and join ----------
-
 def word_count(sentence):
     """How many words? "the cat sat" -> 3"""
     return len(sentence.split())
 
 def first_word(sentence):
     """The first word. "the cat sat" -> "the" """
-    words = sentence.split()
-    return words[0]
+    return sentence.split()[0]
 
 
 def last_word(sentence):
     """The last word. "the cat sat" -> "sat" """
-    words = sentence.split()
-    return words[-1]
+    return sentence.split()[-1]
 
 def reverse_words(sentence):
     """Same words, reversed ORDER. "the cat sat" -> "sat cat the" """
-    return " ".join(sentence.split()[::-1])
+    return sentence.split()[::-1]
 
 def join_with_commas(words):
     """["a","b","c"] -> "a,b,c" """
     return ",".join(words)
 
-
 def initials(sentence):
     """First letter of each word, joined. "the cat sat" -> "tcs" """
-    
-    result = []
-    for w in sentence.split():
-        result.append(w[0])
-    return "".join(result)
+    list = []
+    for x in sentence.split():
+        list.append(x[0])
+    return "".join(list)
+
       
 # ---------- SECTION C: string methods ----------
 
@@ -118,32 +111,31 @@ def trimmed(s):
 def count_letter(s, letter):
     """How many times does `letter` appear? ("banana","a") -> 3"""
     count = 0
-    for ch in s:
-        if ch == letter:
-            count += 1
+    for letter in s:
+        count += 1
     return count
 
 def swap_letter(s, old, new):
     """Replace every `old` with `new`. ("banana","a","o") -> "bonono" """
     return s.replace(old,new)
+    
 
 
 def starts_with_vowel(word):
-    return word[0] in "aeiou"          # first char, is it in the vowel string?
+    """True if the word starts with a vowel. "apple" -> True, "cat" -> False"""
+    return word[0].lower() in "aeoiu"
 
 def count_digits(s):
+    """How many characters in s are digits? "a1b22" -> 3"""
     count = 0
-    for ch in s:
-        if ch.isdigit():
+    for x in s:
+        if x.isdigit():
             count += 1
     return count
 
 def only_letters(s):
-    result = []                        # a LIST — strings are immutable
-    for ch in s:
-        if ch.isalpha():
-            result.append(ch)
-    return "".join(result)             # fuse back into a string
+    """Keep only the alphabetic characters, as a string. "a1b2" -> "ab" """
+    return "".join(x for x in s if x.isalpha())
 
 
 # ---------- SECTION D: list methods ----------
@@ -160,34 +152,36 @@ def without_last(nums):
 
 def position_of(nums, x):
     """The position of the first x, or -1 if absent. ([5,7,9],7) -> 1"""
-    if x in nums:
-        return nums.index(x)
+    for y in nums:
+        if y == x:
+            return nums.index(x)
     return -1
+        
 
 def how_many_times(nums, x):
     """How many times x appears. ([1,2,1],1) -> 2"""
-    return nums.count(x)
-
+    count = 0
+    for y in nums:
+        if y == x:
+            count +=1
+    return count
 
 def combine(a, b):
-    """Join two lists into one. ([1,2],[3]) -> [1,2,3]"""
-    return (a+b)
-
+    """Join two lists into one. ([1,2],[3]) -> [1,2,3]"""    
+    return a + b
 
 # ---------- SECTION E: classic Q2 patterns ----------
 
 def is_palindrome(s):
     """Reads the same both ways? "level" -> True, "hello" -> False"""
-    if s == s[::-1]:
-        return True
-    return False
+    return s == s[::-1]
 
 
 def alternating_sums(nums):
     """[sum of even positions, sum of odd positions].
     [50,60,60,45,70] -> [180, 105]
     HINT: step slicing."""
-    ...
+    return [sum(nums[::2]),sum(nums[1::2])]
 
 
 def adjacent_sums(nums):
@@ -195,26 +189,27 @@ def adjacent_sums(nums):
     HINT: loop to len-1 so nums[i+1] exists."""
     results =[]
     for i in range(len(nums)-1):
-        results.append(nums[i]+ nums[i+1])
+        results.append(nums[i]+nums[i+1])
     return results
 
 def longest_word_in(sentence):
     """The longest word. "the apple sat" -> "apple" """
-    words = sentence.split()
-    best = words[0]
-
-    for w in words:
-        if len(w) > len(best):
-            best = w
+    new_sentence = sentence.split()
+    best = ""
+    for x in new_sentence:
+        if len(x) > len(best):
+            best = x
     return best
+
 
 def capitalize_words(sentence):
     """Uppercase the first letter of each word.
     "the cat sat" -> "The Cat Sat" """
-    result = []
-    for w in sentence.split():
-        result.append(w.capitalize())     # "the" -> "The"
-    return " ".join(result)
+    new_sentence=sentence.split()
+    list =[]
+    for x in new_sentence:
+        list.append(x[0].upper() + x[1:])
+    return list
 
 
 
