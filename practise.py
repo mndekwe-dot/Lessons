@@ -1,12 +1,5 @@
-def most_frequent(nums):
-    """The value that appears most often. [3,1,3,2,3,1] -> 3"""
-    ...
-    seen = set()
-    count={}
-    for x in nums:
-        count[x] = count.get(x,0)+0 
-    best =0
-    for i in cou
+nums = [3, 1, 4]
+for i in range(len(nums)):    # i = 0, 1, 2  (every valid position)
+    nums[i] = nums[i] * 2     # double each item IN the list
 
-results=solution([1,2,3], [2,1,3])
-print(results)
+print(i)
