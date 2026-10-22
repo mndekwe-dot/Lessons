@@ -10,14 +10,17 @@ You are preparing for **two assessments**, taken in person:
 
 ---
 
-## This repository holds four things
+## This repository holds five things
 
-The GCA material below is the oldest part. Three full curricula have grown around it,
-each with its own plan, gated checkpoints and progress tracker.
+The GCA material below is the oldest part. Four curricula have grown around it,
+each with its own plan and exercises.
 
 | | What | Length | Start when |
 |---|---|---|---|
+| [`DUAL_TRACK_ROADMAP.md`](DUAL_TRACK_ROADMAP.md) | Parallel schedule & concept-by-concept alignment (Python + JS) | 4 weeks | **Start here** for dual preparation |
+| [`UNIVERSAL_PROGRAMMING_LOGIC.md`](UNIVERSAL_PROGRAMMING_LOGIC.md) | The universal logic blueprint behind every language | — | Read first to build language-agnostic logic |
 | **GCA prep** | the numbered files below, `practice/` | — | now / ongoing |
+| [`the-gym-prep/`](the-gym-prep/) | JavaScript fundamentals, CodeWars katas, interview Q&A | 1–2 weeks | for The Gym admission assessment |
 | [`engineering-curriculum/`](engineering-curriculum/) | Django, React, infra, system design, mobile | 17 weeks | after the GCA |
 | [`cybersecurity/`](cybersecurity/) | foundations → appsec → infra → malware → forensics → law | 8 weeks | after engineering Checkpoint 10 |
 | [`data-science-ml/`](data-science-ml/) | maths → wrangling → classical ML → DL → LLMs → MLOps | 37 weeks | after engineering Checkpoint 12 |

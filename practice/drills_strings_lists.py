@@ -30,170 +30,198 @@ REMINDER: slicing works the SAME on strings and lists.
 
 def first_char(s):
     """Return the first character. "hello" -> "h" """
-    pass
+    return s[0]
 
 
 def last_char(s):
     """Return the last character. "hello" -> "o" """
-    pass
+    return s[-1]
 
 
 def first_three(s):
     """Return the first 3 characters. "hello" -> "hel" """
-    pass
+    return s[:3]
 
 
 def last_three(s):
     """Return the last 3 characters. "hello" -> "llo" """
-    pass
+    return s[-3:]
 
 
 def middle_part(s):
     """Return everything EXCEPT the first and last character. "hello" -> "ell" """
-    pass
+    return s[1:-1]
 
 
 def backwards(s):
     """Return the string reversed. "hello" -> "olleh" """
-    pass
+    return s[::-1]
 
 
 def every_second(s):
     """Return every 2nd character, starting from the first. "abcdef" -> "ace" """
-    pass
+    return s[::2]
 
 
 def drop_first_two(nums):
     """Return the list without its first two items. [1,2,3,4] -> [3,4]"""
-    pass
+    return nums[2:]
 
 
 # ---------- SECTION B: split and join ----------
 
 def word_count(sentence):
     """How many words? "the cat sat" -> 3"""
-    pass
+    return len(sentence.split())
 
 
 def first_word(sentence):
     """The first word. "the cat sat" -> "the" """
-    pass
+    return sentence.split()[0]
 
 
 def last_word(sentence):
     """The last word. "the cat sat" -> "sat" """
-    pass
+    return sentence.split()[-1]
 
 
 def reverse_words(sentence):
     """Same words, reversed ORDER. "the cat sat" -> "sat cat the" """
-    pass
+    return " ".join(sentence.split()[::-1])
 
 
 def join_with_commas(words):
     """["a","b","c"] -> "a,b,c" """
-    pass
+    return ",".join(words)
 
 
 def initials(sentence):
     """First letter of each word, joined. "the cat sat" -> "tcs" """
-    pass
+    new_sentence= sentence.split()
+    list=[]
+    for x in new_sentence:
+        list.append(x[0])
+    return "".join(list)
+        
 
 
 # ---------- SECTION C: string methods ----------
 
 def shout_it(s):
     """Uppercase the whole string. "hi" -> "HI" """
-    pass
-
+    return s.upper()
 
 def trimmed(s):
     """Remove spaces from both ends. "  hi  " -> "hi" """
-    pass
+    return s.strip() 
 
 
 def count_letter(s, letter):
     """How many times does `letter` appear? ("banana","a") -> 3"""
-    pass
-
+    return s.count(letter)
 
 def swap_letter(s, old, new):
     """Replace every `old` with `new`. ("banana","a","o") -> "bonono" """
-    pass
+    return s.replace("a","o")
 
 
 def starts_with_vowel(word):
     """True if the word starts with a vowel. "apple" -> True, "cat" -> False"""
-    pass
+    if word[0] in "aeuio":
+        return True #wrong 
 
 
 def count_digits(s):
     """How many characters in s are digits? "a1b22" -> 3"""
-    pass
+    count= 0
+    for x in s:
+        if x.isdigit():
+            count += 1
+    return count
 
 
 def only_letters(s):
     """Keep only the alphabetic characters, as a string. "a1b2" -> "ab" """
-    pass
-
+    list = []
+    for x in s:
+        if x.isalpha():
+            list.append(x)
+    return "".join(list)
 
 # ---------- SECTION D: list methods ----------
 
 def add_to_end(nums, x):
     """Return the list with x added at the end. ([1,2], 3) -> [1,2,3]"""
-    pass
+    return nums.append(x) #returning none and i don't know why.
 
 
 def without_last(nums):
     """Return the list without its last item. [1,2,3] -> [1,2]"""
-    pass
+    return nums.pop() #wrong also
 
 
 def position_of(nums, x):
     """The position of the first x, or -1 if absent. ([5,7,9],7) -> 1"""
-    pass
-
+    if x in nums:
+        return nums.index(x)
+    else:
+        return -1
 
 def how_many_times(nums, x):
     """How many times x appears. ([1,2,1],1) -> 2"""
-    pass
+    counter = 0
+    for i in nums:
+        if i == x:
+            counter += 1
+    return counter 
 
 
 def combine(a, b):
     """Join two lists into one. ([1,2],[3]) -> [1,2,3]"""
-    pass
+    return zip(a,b) # wrong 
 
 
 # ---------- SECTION E: classic Q2 patterns ----------
-
 def is_palindrome(s):
     """Reads the same both ways? "level" -> True, "hello" -> False"""
-    pass
-
+    if s ==  s[::-1]:
+        return True 
+    else:
+        return False   
 
 def alternating_sums(nums):
     """[sum of even positions, sum of odd positions].
     [50,60,60,45,70] -> [180, 105]
     HINT: step slicing."""
-    pass
+    return [sum(nums[::2]),sum(nums[1::2])]
 
 
 def adjacent_sums(nums):
     """Sum each neighbouring pair. [1,2,3,4] -> [3,5,7]
     HINT: loop to len-1 so nums[i+1] exists."""
-    pass
+    for i in range(len(nums)-1):
+        return (nums[i] + nums[i+1])
 
-
+    
 def longest_word_in(sentence):
     """The longest word. "the apple sat" -> "apple" """
-    pass
+    new_sentence = sentence.split() 
+    best =new_sentence[0]
+    for x in new_sentence:
+        if len(x) > len(best):
+            best = x
+    return best
 
 
 def capitalize_words(sentence):
     """Uppercase the first letter of each word.
     "the cat sat" -> "The Cat Sat" """
-    pass
-
+    new_sentence= sentence.split()
+    capitalize_words_list = []
+    for x in new_sentence:
+        new_x =x[0].upper() + x[1:]
+        capitalize_words_list.append(new_x)
+        return " ".join(capitalize_words_list)
 
 # ------------------------- self-tests -------------------------
 TESTS = [
