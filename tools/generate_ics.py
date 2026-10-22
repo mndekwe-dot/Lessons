@@ -6,7 +6,7 @@ Covers both Python (AmaliTech) and JavaScript (The Gym) tracks.
 import datetime
 
 def generate_ics():
-    today = datetime.date(2026, 10, 23) # Starting Friday, Oct 23, 2026
+    today = datetime.date(2026, 10, 22) # Starting Thursday, Oct 22, 2026 (Today)
     
     # 14 days of structured content
     curriculum = [
@@ -232,7 +232,7 @@ def generate_ics():
         })
 
     # Build the .ics text
-    now_stamp = datetime.datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+    now_stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
@@ -264,3 +264,4 @@ if __name__ == "__main__":
     with open("study_schedule_2weeks.ics", "w", encoding="utf-8") as f:
         f.write(ics_content)
     print("study_schedule_2weeks.ics successfully generated!")
+

@@ -7,700 +7,700 @@ X-WR-CALNAME:14-Day Intensive Code Prep (Python & JavaScript)
 X-WR-TIMEZONE:Africa/Kigali
 X-WR-CALDESC:Full-time 14-day intensive coding schedule for AmaliTech and The Gym assessments
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day1-20261023@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261023T083000
-DTEND:20261023T103000
+UID:amalitech-py-foundations-day1-20261022@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261022T083000
+DTEND:20261022T103000
 SUMMARY:[Morning Track] Python: Variables, Conditionals & Modulo
 DESCRIPTION:DAY 1 OF 14 - AMALITECH PYTHON PREP\n\nRead 01-python-essentials.md and 01c-conditions-guide.md.\nRun: python practice/drills_common_mistakes.py (Sections A-B).\nFocus on %, //, and truthy/falsy logic.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day1-20261023@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261023T110000
-DTEND:20261023T123000
+UID:amalitech-py-gca-day1-20261022@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261022T110000
+DTEND:20261022T123000
 SUMMARY:[AmaliTech GCA] Solve practice/q1_warmups.py (Tasks 1 to...
 DESCRIPTION:DAY 1 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Solve practice/q1_warmups.py (Tasks 1 to 5).\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day1-20261023@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261023T143000
-DTEND:20261023T160000
+UID:thegym-english-day1-20261022@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261022T143000
+DTEND:20261022T160000
 SUMMARY:[Interview & Video] Interview English: Self-Introduction & Video Draft
 DESCRIPTION:DAY 1 OF 14 - ENGLISH & APPLICATION PREP\n\nRead the-gym-prep/08-application-video-script.md.\nDraft your personal 60-90 second introduction script.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day1-20261023@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261023T163000
-DTEND:20261023T183000
+UID:thegym-js-core-day1-20261022@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261022T163000
+DTEND:20261022T183000
 SUMMARY:[Evening Track] JavaScript: Variables (let/const) & Equality (===)
 DESCRIPTION:DAY 1 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nRead the-gym-prep/01-javascript-essentials.md.\nRun: node the-gym-prep/practice/drills_js_basics.js (Sections A & B).\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day1-20261023@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261023T193000
-DTEND:20261023T210000
+UID:thegym-js-katas-day1-20261022@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261022T193000
+DTEND:20261022T210000
 SUMMARY:[Codewars & Mock] Solve Kata 1 (Multiply) & Kata 2 (Even o...
 DESCRIPTION:DAY 1 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Solve Kata 1 (Multiply) & Kata 2 (Even or Odd) on Codewars.\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day2-20261024@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261024T083000
-DTEND:20261024T103000
+UID:amalitech-py-foundations-day2-20261023@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261023T083000
+DTEND:20261023T103000
 SUMMARY:[Morning Track] Python: Loops (for, while, range)
 DESCRIPTION:DAY 2 OF 14 - AMALITECH PYTHON PREP\n\nRead 01b-loops-guide.md.\nRun: python practice/drills_strings_lists.py (Sections A & B).\nMaster off-by-one errors and loop accumulators.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day2-20261024@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261024T110000
-DTEND:20261024T123000
+UID:amalitech-py-gca-day2-20261023@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261023T110000
+DTEND:20261023T123000
 SUMMARY:[AmaliTech GCA] Solve practice/q1_warmups.py (Tasks 6 to...
 DESCRIPTION:DAY 2 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Solve practice/q1_warmups.py (Tasks 6 to 10).\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day2-20261024@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261024T143000
-DTEND:20261024T160000
+UID:thegym-english-day2-20261023@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261023T143000
+DTEND:20261023T160000
 SUMMARY:[Interview & Video] Interview English: Practice Answers Q1 & Q2
 DESCRIPTION:DAY 2 OF 14 - ENGLISH & APPLICATION PREP\n\nOpen the-gym-prep/05-interview-theory-qa.md.\nPractice explaining 'let vs const vs var' out loud in English.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day2-20261024@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261024T163000
-DTEND:20261024T183000
+UID:thegym-js-core-day2-20261023@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261023T163000
+DTEND:20261023T183000
 SUMMARY:[Evening Track] JavaScript: Loops (for, while, for...of)
 DESCRIPTION:DAY 2 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nRead the-gym-prep/02-loops-and-functions.md.\nRun: node the-gym-prep/practice/drills_js_basics.js (Section C).\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day2-20261024@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261024T193000
-DTEND:20261024T210000
+UID:thegym-js-katas-day2-20261023@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261023T193000
+DTEND:20261023T210000
 SUMMARY:[Codewars & Mock] Solve Kata 3 (Opposite Number) & Kata 4 ...
 DESCRIPTION:DAY 2 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Solve Kata 3 (Opposite Number) & Kata 4 (Return Negative) on Codewars.\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day3-20261025@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261025T083000
-DTEND:20261025T103000
+UID:amalitech-py-foundations-day3-20261024@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261024T083000
+DTEND:20261024T103000
 SUMMARY:[Morning Track] Python: Strings & Slicing [start:stop:step]
 DESCRIPTION:DAY 3 OF 14 - AMALITECH PYTHON PREP\n\nRead 02-strings-and-lists.md (String section).\nRun: python practice/drills_strings_lists.py (Section C).\nMaster string reversal [::-1], .split(), and .join().\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day3-20261025@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261025T110000
-DTEND:20261025T123000
+UID:amalitech-py-gca-day3-20261024@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261024T110000
+DTEND:20261024T123000
 SUMMARY:[AmaliTech GCA] Solve practice/q1_warmups.py (Tasks 11 t...
 DESCRIPTION:DAY 3 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Solve practice/q1_warmups.py (Tasks 11 to 15).\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day3-20261025@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261025T143000
-DTEND:20261025T160000
+UID:thegym-english-day3-20261024@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261024T143000
+DTEND:20261024T160000
 SUMMARY:[Interview & Video] Interview English: Practice Answers Q3 & Q4
 DESCRIPTION:DAY 3 OF 14 - ENGLISH & APPLICATION PREP\n\nOpen the-gym-prep/05-interview-theory-qa.md.\nPractice explaining '=== vs ==' and 'Truthy vs Falsy' out loud.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day3-20261025@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261025T163000
-DTEND:20261025T183000
+UID:thegym-js-core-day3-20261024@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261024T163000
+DTEND:20261024T183000
 SUMMARY:[Evening Track] JavaScript: Strings & Template Literals
 DESCRIPTION:DAY 3 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nRead the-gym-prep/03-strings-and-arrays.md (Strings section).\nRun: node the-gym-prep/practice/drills_js_basics.js (Section D).\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day3-20261025@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261025T193000
-DTEND:20261025T210000
+UID:thegym-js-katas-day3-20261024@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261024T193000
+DTEND:20261024T210000
 SUMMARY:[Codewars & Mock] Solve Kata 5 (String Repeat) & Kata 6 (R...
 DESCRIPTION:DAY 3 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Solve Kata 5 (String Repeat) & Kata 6 (Remove First and Last Char) on Codewars.\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day4-20261026@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261026T083000
-DTEND:20261026T103000
+UID:amalitech-py-foundations-day4-20261025@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261025T083000
+DTEND:20261025T103000
 SUMMARY:[Morning Track] Python: Lists & List Comprehensions
 DESCRIPTION:DAY 4 OF 14 - AMALITECH PYTHON PREP\n\nRead 02-strings-and-lists.md (List section).\nRun: python practice/drills_strings_lists.py (Sections D & E).\nMaster .append(), .pop(), and list filters.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day4-20261026@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261026T110000
-DTEND:20261026T123000
+UID:amalitech-py-gca-day4-20261025@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261025T110000
+DTEND:20261025T123000
 SUMMARY:[AmaliTech GCA] Solve practice/gca_q1_basic.py....
 DESCRIPTION:DAY 4 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Solve practice/gca_q1_basic.py.\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day4-20261026@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261026T143000
-DTEND:20261026T160000
+UID:thegym-english-day4-20261025@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261025T143000
+DTEND:20261025T160000
 SUMMARY:[Interview & Video] Application Video: Record Take 1
 DESCRIPTION:DAY 4 OF 14 - ENGLISH & APPLICATION PREP\n\nRecord your first video draft using your phone/laptop.\nWatch it back to check sound quality, eye contact, and clear English pacing.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day4-20261026@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261026T163000
-DTEND:20261026T183000
+UID:thegym-js-core-day4-20261025@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261025T163000
+DTEND:20261025T183000
 SUMMARY:[Evening Track] JavaScript: Arrays & Array Methods
 DESCRIPTION:DAY 4 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nRead the-gym-prep/03-strings-and-arrays.md (Arrays section).\nRun: node the-gym-prep/practice/drills_js_basics.js (Section E).\nMaster push, pop, slice vs splice.\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day4-20261026@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261026T193000
-DTEND:20261026T210000
+UID:thegym-js-katas-day4-20261025@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261025T193000
+DTEND:20261025T210000
 SUMMARY:[Codewars & Mock] Solve Kata 7 (Sum of Positive) on Codewa...
 DESCRIPTION:DAY 4 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Solve Kata 7 (Sum of Positive) on Codewars.\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day5-20261027@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261027T083000
-DTEND:20261027T103000
+UID:amalitech-py-foundations-day5-20261026@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261026T083000
+DTEND:20261026T103000
 SUMMARY:[Morning Track] Python: Dictionaries & Hash Map Tallies
 DESCRIPTION:DAY 5 OF 14 - AMALITECH PYTHON PREP\n\nRead 03-dictionaries-and-sets.md.\nRun: python practice/drills_dicts_sets.py (Sections A-C).\nMaster frequency counting: d[x] = d.get(x, 0) + 1.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day5-20261027@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261027T110000
-DTEND:20261027T123000
+UID:amalitech-py-gca-day5-20261026@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261026T110000
+DTEND:20261026T123000
 SUMMARY:[AmaliTech GCA] Solve practice/gca_q2_data_manipulation....
 DESCRIPTION:DAY 5 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Solve practice/gca_q2_data_manipulation.py (Tasks 1-3).\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day5-20261027@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261027T143000
-DTEND:20261027T160000
+UID:thegym-english-day5-20261026@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261026T143000
+DTEND:20261026T160000
 SUMMARY:[Interview & Video] Interview English: Practice Answers Q5 & Q6
 DESCRIPTION:DAY 5 OF 14 - ENGLISH & APPLICATION PREP\n\nOpen the-gym-prep/05-interview-theory-qa.md.\nPractice explaining 'Arrow functions' and 'Array methods (map/filter/reduce)'.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day5-20261027@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261027T163000
-DTEND:20261027T183000
+UID:thegym-js-core-day5-20261026@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261026T163000
+DTEND:20261026T183000
 SUMMARY:[Evening Track] JavaScript: Functions & Arrow Functions
 DESCRIPTION:DAY 5 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nRead the-gym-prep/02-loops-and-functions.md (Functions section).\nPractice writing helper functions and return values.\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day5-20261027@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261027T193000
-DTEND:20261027T210000
+UID:thegym-js-katas-day5-20261026@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261026T193000
+DTEND:20261026T210000
 SUMMARY:[Codewars & Mock] Solve Kata 8 (Counting Sheep) & Kata 9 (...
 DESCRIPTION:DAY 5 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Solve Kata 8 (Counting Sheep) & Kata 9 (Keep Hydrated) on Codewars.\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day6-20261028@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261028T083000
-DTEND:20261028T103000
+UID:amalitech-py-foundations-day6-20261027@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261027T083000
+DTEND:20261027T103000
 SUMMARY:[Morning Track] Python: Sets & Unique Item Lookups
 DESCRIPTION:DAY 6 OF 14 - AMALITECH PYTHON PREP\n\nRead 03-dictionaries-and-sets.md (Sets section).\nRun: python practice/drills_dicts_sets.py (Sections D-E).\nMaster O(1) membership testing with set.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day6-20261028@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261028T110000
-DTEND:20261028T123000
+UID:amalitech-py-gca-day6-20261027@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261027T110000
+DTEND:20261027T123000
 SUMMARY:[AmaliTech GCA] Solve practice/gca_q2_data_manipulation....
 DESCRIPTION:DAY 6 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Solve practice/gca_q2_data_manipulation.py (Tasks 4-6).\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day6-20261028@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261028T143000
-DTEND:20261028T160000
+UID:thegym-english-day6-20261027@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261027T143000
+DTEND:20261027T160000
 SUMMARY:[Interview & Video] Application Video: Final Recording & Upload
 DESCRIPTION:DAY 6 OF 14 - ENGLISH & APPLICATION PREP\n\nRecord final version of the 60-90s video.\nUpload to YouTube (unlisted) or Google Drive and verify the share link.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day6-20261028@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261028T163000
-DTEND:20261028T183000
+UID:thegym-js-core-day6-20261027@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261027T163000
+DTEND:20261027T183000
 SUMMARY:[Evening Track] JavaScript: Objects & Key-Value Lookups
 DESCRIPTION:DAY 6 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nRead the-gym-prep/04-objects-and-data-structures.md.\nRun: node the-gym-prep/practice/drills_objects_maps.js (Sections A & B).\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day6-20261028@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261028T193000
-DTEND:20261028T210000
+UID:thegym-js-katas-day6-20261027@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261027T193000
+DTEND:20261027T210000
 SUMMARY:[Codewars & Mock] Solve Kata 10 (Convert Number to Reverse...
 DESCRIPTION:DAY 6 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Solve Kata 10 (Convert Number to Reversed Array of Digits).\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day7-20261029@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261029T083000
-DTEND:20261029T103000
+UID:amalitech-py-foundations-day7-20261028@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261028T083000
+DTEND:20261028T103000
 SUMMARY:[Morning Track] Python: 2D Grids & Matrix Navigation
 DESCRIPTION:DAY 7 OF 14 - AMALITECH PYTHON PREP\n\nRead 04-matrices-and-simulation.md.\nMaster row/col indexing grid[r][c], 4-directional moves (dr, dc).\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day7-20261029@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261029T110000
-DTEND:20261029T123000
+UID:amalitech-py-gca-day7-20261028@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261028T110000
+DTEND:20261028T123000
 SUMMARY:[AmaliTech GCA] Solve practice/gca_q3_implementation.py ...
 DESCRIPTION:DAY 7 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Solve practice/gca_q3_implementation.py (Task 1).\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day7-20261029@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261029T143000
-DTEND:20261029T160000
+UID:thegym-english-day7-20261028@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261028T143000
+DTEND:20261028T160000
 SUMMARY:[Interview & Video] Interview English: Personal Motivation & Goals
 DESCRIPTION:DAY 7 OF 14 - ENGLISH & APPLICATION PREP\n\nOpen the-gym-prep/05-interview-theory-qa.md (Part 2: Personal Questions).\nPractice: 'Why do you want to join The Gym?' and 'How do you handle difficult bugs?'.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day7-20261029@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261029T163000
-DTEND:20261029T183000
+UID:thegym-js-core-day7-20261028@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261028T163000
+DTEND:20261028T183000
 SUMMARY:[Evening Track] JavaScript: Set & Map Data Structures
 DESCRIPTION:DAY 7 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nRead the-gym-prep/04-objects-and-data-structures.md (Set/Map section).\nRun: node the-gym-prep/practice/drills_objects_maps.js (Sections C & D).\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day7-20261029@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261029T193000
-DTEND:20261029T210000
+UID:thegym-js-katas-day7-20261028@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261028T193000
+DTEND:20261028T210000
 SUMMARY:[Codewars & Mock] Complete the-gym-prep/practice/codewars_...
 DESCRIPTION:DAY 7 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Complete the-gym-prep/practice/codewars_practice.js and submit profile on Codewars.\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day8-20261030@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261030T083000
-DTEND:20261030T103000
+UID:amalitech-py-foundations-day8-20261029@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261029T083000
+DTEND:20261029T103000
 SUMMARY:[Morning Track] Python: 2D Simulation (Game of Life / Spiral)
 DESCRIPTION:DAY 8 OF 14 - AMALITECH PYTHON PREP\n\nReview 04-matrices-and-simulation.md.\nPractice boundary checks: 0 <= r < rows and 0 <= c < cols.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day8-20261030@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261030T110000
-DTEND:20261030T123000
+UID:amalitech-py-gca-day8-20261029@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261029T110000
+DTEND:20261029T123000
 SUMMARY:[AmaliTech GCA] Solve practice/gca_q3_implementation.py ...
 DESCRIPTION:DAY 8 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Solve practice/gca_q3_implementation.py (Tasks 2 & 3).\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day8-20261030@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261030T143000
-DTEND:20261030T160000
+UID:thegym-english-day8-20261029@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261029T143000
+DTEND:20261029T160000
 SUMMARY:[Interview & Video] Interview English: Full Mock Q&A (Spoken 15 min)
 DESCRIPTION:DAY 8 OF 14 - ENGLISH & APPLICATION PREP\n\nRehearse all 9 technical theory questions without looking at notes.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day8-20261030@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261030T163000
-DTEND:20261030T183000
+UID:thegym-js-core-day8-20261029@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261029T163000
+DTEND:20261029T183000
 SUMMARY:[Evening Track] JavaScript: Array Transformations (map, filter, reduce)
 DESCRIPTION:DAY 8 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nReview the-gym-prep/03-strings-and-arrays.md.\nWrite pure functional pipelines for array manipulation.\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day8-20261030@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261030T193000
-DTEND:20261030T210000
+UID:thegym-js-katas-day8-20261029@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261029T193000
+DTEND:20261029T210000
 SUMMARY:[Codewars & Mock] Solve two 7 kyu Codewars katas (e.g., Vo...
 DESCRIPTION:DAY 8 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Solve two 7 kyu Codewars katas (e.g., Vowel Count, Disemvowel Trolls).\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day9-20261031@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261031T083000
-DTEND:20261031T103000
+UID:amalitech-py-foundations-day9-20261030@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261030T083000
+DTEND:20261030T103000
 SUMMARY:[Morning Track] Python: Two Pointers & Sliding Windows
 DESCRIPTION:DAY 9 OF 14 - AMALITECH PYTHON PREP\n\nRead 05-algorithm-patterns.md.\nMaster left/right pointer convergence on sorted arrays.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day9-20261031@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261031T110000
-DTEND:20261031T123000
+UID:amalitech-py-gca-day9-20261030@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261030T110000
+DTEND:20261030T123000
 SUMMARY:[AmaliTech GCA] Solve practice/gca_q4_problem_solving.py...
 DESCRIPTION:DAY 9 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Solve practice/gca_q4_problem_solving.py (Task 1).\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day9-20261031@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261031T143000
-DTEND:20261031T160000
+UID:thegym-english-day9-20261030@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261030T143000
+DTEND:20261030T160000
 SUMMARY:[Interview & Video] Cognitive Assessment Prep: Patterns & Logic
 DESCRIPTION:DAY 9 OF 14 - ENGLISH & APPLICATION PREP\n\nRead 07-cognitive-test.md.\nPractice number sequences, shape transformations, and rule deduction.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day9-20261031@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261031T163000
-DTEND:20261031T183000
+UID:thegym-js-core-day9-20261030@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261030T163000
+DTEND:20261030T183000
 SUMMARY:[Evening Track] JavaScript: Common Traps & Bug Fixing
 DESCRIPTION:DAY 9 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nRead the-gym-prep/10-my-common-js-mistakes.md.\nRun: node the-gym-prep/practice/drills_common_mistakes.js.\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day9-20261031@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261031T193000
-DTEND:20261031T210000
+UID:thegym-js-katas-day9-20261030@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261030T193000
+DTEND:20261030T210000
 SUMMARY:[Codewars & Mock] Solve 7 kyu Kata: Highest and Lowest on ...
 DESCRIPTION:DAY 9 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Solve 7 kyu Kata: Highest and Lowest on Codewars.\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day10-20261101@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261101T083000
-DTEND:20261101T103000
+UID:amalitech-py-foundations-day10-20261031@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261031T083000
+DTEND:20261031T103000
 SUMMARY:[Morning Track] Python: Prefix Sums & Running Accumulations
 DESCRIPTION:DAY 10 OF 14 - AMALITECH PYTHON PREP\n\nReview 05-algorithm-patterns.md (Prefix sum section).\nMaster O(1) subarray sum queries.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day10-20261101@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261101T110000
-DTEND:20261101T123000
+UID:amalitech-py-gca-day10-20261031@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261031T110000
+DTEND:20261031T123000
 SUMMARY:[AmaliTech GCA] Solve practice/gca_q4_problem_solving.py...
 DESCRIPTION:DAY 10 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Solve practice/gca_q4_problem_solving.py (Task 2).\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day10-20261101@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261101T143000
-DTEND:20261101T160000
+UID:thegym-english-day10-20261031@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261031T143000
+DTEND:20261031T160000
 SUMMARY:[Interview & Video] Application Check: Submit Application to The Gym
 DESCRIPTION:DAY 10 OF 14 - ENGLISH & APPLICATION PREP\n\nVerify video link, Codewars profile link, and submit your application form.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day10-20261101@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261101T163000
-DTEND:20261101T183000
+UID:thegym-js-core-day10-20261031@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261031T163000
+DTEND:20261031T183000
 SUMMARY:[Evening Track] JavaScript: Number Sorting & Array Quirks
 DESCRIPTION:DAY 10 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nReview sorting with (a, b) => a - b.\nRun: node the-gym-prep/practice/drills_common_mistakes.js (Section B).\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day10-20261101@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261101T193000
-DTEND:20261101T210000
+UID:thegym-js-katas-day10-20261031@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261031T193000
+DTEND:20261031T210000
 SUMMARY:[Codewars & Mock] Solve 7 kyu Kata: List Filtering on Code...
 DESCRIPTION:DAY 10 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Solve 7 kyu Kata: List Filtering on Codewars.\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day11-20261102@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261102T083000
-DTEND:20261102T103000
+UID:amalitech-py-foundations-day11-20261101@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261101T083000
+DTEND:20261101T103000
 SUMMARY:[Morning Track] Python: Timed GCA Mock Exam #1 (70 Minutes)
 DESCRIPTION:DAY 11 OF 14 - AMALITECH PYTHON PREP\n\nOpen 06-mock-test.md.\nSet a timer for 70 minutes. Solve Q1, Q2, Q3 without checking notes.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day11-20261102@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261102T110000
-DTEND:20261102T123000
+UID:amalitech-py-gca-day11-20261101@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261101T110000
+DTEND:20261101T123000
 SUMMARY:[AmaliTech GCA] Score your mock test against the rubric ...
 DESCRIPTION:DAY 11 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Score your mock test against the rubric in 06-mock-test.md.\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day11-20261102@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261102T143000
-DTEND:20261102T160000
+UID:thegym-english-day11-20261101@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261101T143000
+DTEND:20261101T160000
 SUMMARY:[Interview & Video] Interview English: Think-Aloud Coding Practice
 DESCRIPTION:DAY 11 OF 14 - ENGLISH & APPLICATION PREP\n\nSolve a simple coding puzzle out loud in English, explaining every variable and loop.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day11-20261102@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261102T163000
-DTEND:20261102T183000
+UID:thegym-js-core-day11-20261101@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261101T163000
+DTEND:20261101T183000
 SUMMARY:[Evening Track] JavaScript: Live Coding Mock Challenge #1
 DESCRIPTION:DAY 11 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nOpen the-gym-prep/practice/mock_interview_test.js.\nRun: node the-gym-prep/practice/mock_interview_test.js (Challenge 1).\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day11-20261102@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261102T193000
-DTEND:20261102T210000
+UID:thegym-js-katas-day11-20261101@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261101T193000
+DTEND:20261101T210000
 SUMMARY:[Codewars & Mock] Review Udacity summary: the-gym-prep/07-...
 DESCRIPTION:DAY 11 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Review Udacity summary: the-gym-prep/07-udacity-ud803-summary.md.\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day12-20261103@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261103T083000
-DTEND:20261103T103000
+UID:amalitech-py-foundations-day12-20261102@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261102T083000
+DTEND:20261102T103000
 SUMMARY:[Morning Track] Python: Review Mock #1 Mistakes & Fix Weak Spots
 DESCRIPTION:DAY 12 OF 14 - AMALITECH PYTHON PREP\n\nReview 10-my-common-mistakes.md.\nRe-solve every problem from Mock #1 where a test failed.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day12-20261103@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261103T110000
-DTEND:20261103T123000
+UID:amalitech-py-gca-day12-20261102@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261102T110000
+DTEND:20261102T123000
 SUMMARY:[AmaliTech GCA] Re-run practice/drills_common_mistakes.p...
 DESCRIPTION:DAY 12 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Re-run practice/drills_common_mistakes.py to solidify edge cases.\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day12-20261103@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261103T143000
-DTEND:20261103T160000
+UID:thegym-english-day12-20261102@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261102T143000
+DTEND:20261102T160000
 SUMMARY:[Interview & Video] Interview English: Behavioral & Scenario Questions
 DESCRIPTION:DAY 12 OF 14 - ENGLISH & APPLICATION PREP\n\nPractice answering: 'Tell me about a time you worked in a group' and 'How do you handle deadlines?'.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day12-20261103@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261103T163000
-DTEND:20261103T183000
+UID:thegym-js-core-day12-20261102@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261102T163000
+DTEND:20261102T183000
 SUMMARY:[Evening Track] JavaScript: Live Coding Mock Challenge #2
 DESCRIPTION:DAY 12 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nOpen the-gym-prep/practice/mock_interview_test.js.\nSolve Challenge 2 (Frequency Tally) under a 20-minute timer.\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day12-20261103@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261103T193000
-DTEND:20261103T210000
+UID:thegym-js-katas-day12-20261102@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261102T193000
+DTEND:20261102T210000
 SUMMARY:[Codewars & Mock] Solve 7 kyu Kata: Jaden Casing Strings o...
 DESCRIPTION:DAY 12 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Solve 7 kyu Kata: Jaden Casing Strings on Codewars.\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day13-20261104@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261104T083000
-DTEND:20261104T103000
+UID:amalitech-py-foundations-day13-20261103@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261103T083000
+DTEND:20261103T103000
 SUMMARY:[Morning Track] Python: Timed GCA Mock Exam #2 (70 Minutes)
 DESCRIPTION:DAY 13 OF 14 - AMALITECH PYTHON PREP\n\nRun a full 4-problem timed simulation from practice/ folder.\nLock in Q1 + Q2 + Q3 in under 50 minutes.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day13-20261104@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261104T110000
-DTEND:20261104T123000
+UID:amalitech-py-gca-day13-20261103@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261103T110000
+DTEND:20261103T123000
 SUMMARY:[AmaliTech GCA] Verify all edge cases: empty list, singl...
 DESCRIPTION:DAY 13 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Verify all edge cases: empty list, single element, negative numbers.\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day13-20261104@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261104T143000
-DTEND:20261104T160000
+UID:thegym-english-day13-20261103@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261103T143000
+DTEND:20261103T160000
 SUMMARY:[Interview & Video] Interview English: The Gym 45-min Interview Simulation
 DESCRIPTION:DAY 13 OF 14 - ENGLISH & APPLICATION PREP\n\nFollow the-gym-prep/12-mock-interview-simulation.md.\nRun a complete mock interview from greeting to coding challenge.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day13-20261104@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261104T163000
-DTEND:20261104T183000
+UID:thegym-js-core-day13-20261103@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261103T163000
+DTEND:20261103T183000
 SUMMARY:[Evening Track] JavaScript: Full Technical Theory Review
 DESCRIPTION:DAY 13 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nRead the-gym-prep/09-javascript-cheat-sheet.md and 11-javascript-glossary.md.\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day13-20261104@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261104T193000
-DTEND:20261104T210000
+UID:thegym-js-katas-day13-20261103@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261103T193000
+DTEND:20261103T210000
 SUMMARY:[Codewars & Mock] Check Codewars rank and verify at least ...
 DESCRIPTION:DAY 13 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Check Codewars rank and verify at least 15-20 solved katas on profile.\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-foundations-day14-20261105@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261105T083000
-DTEND:20261105T103000
+UID:amalitech-py-foundations-day14-20261104@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261104T083000
+DTEND:20261104T103000
 SUMMARY:[Morning Track] Python: Final Pre-Assessment Mental Checklist
 DESCRIPTION:DAY 14 OF 14 - AMALITECH PYTHON PREP\n\nReview 08-cheat-sheet.md and 10-my-common-mistakes.md.\nRest your mind and get 8 hours of sleep.\n\nWorkspace file: practice/drills_strings_lists.py
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:amalitech-py-gca-day14-20261105@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261105T110000
-DTEND:20261105T123000
+UID:amalitech-py-gca-day14-20261104@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261104T110000
+DTEND:20261104T123000
 SUMMARY:[AmaliTech GCA] Review test-day strategy in README.md (L...
 DESCRIPTION:DAY 14 OF 14 - CODESIGNAL GCA PRACTICE\n\nGoal: Review test-day strategy in README.md (Lock in Q1 + Q2 + Q3).\n\nStrategy: Solve on paper first, code, and test edge cases.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-english-day14-20261105@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261105T143000
-DTEND:20261105T160000
+UID:thegym-english-day14-20261104@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261104T143000
+DTEND:20261104T160000
 SUMMARY:[Interview & Video] Final Confidence Check: The Gym & AmaliTech Ready
 DESCRIPTION:DAY 14 OF 14 - ENGLISH & APPLICATION PREP\n\nReview Readiness Checklists in DUAL_TRACK_ROADMAP.md.\nConfirm all materials and interview links are ready.\n\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-core-day14-20261105@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261105T163000
-DTEND:20261105T183000
+UID:thegym-js-core-day14-20261104@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261104T163000
+DTEND:20261104T183000
 SUMMARY:[Evening Track] JavaScript: 30-Minute Light Warmup
 DESCRIPTION:DAY 14 OF 14 - THE GYM JAVASCRIPT FUNDAMENTALS\n\nRun node the-gym-prep/practice/drills_js_basics.js once smoothly.\nNo heavy new topics today.\n\nWorkspace file: the-gym-prep/practice/drills_js_basics.js
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:thegym-js-katas-day14-20261105@prep
-DTSTAMP:20261022T073612Z
-DTSTART:20261105T193000
-DTEND:20261105T210000
+UID:thegym-js-katas-day14-20261104@prep
+DTSTAMP:20261022T075355Z
+DTSTART:20261104T193000
+DTEND:20261104T210000
 SUMMARY:[Codewars & Mock] Celebrate completing 14 days of intensiv...
 DESCRIPTION:DAY 14 OF 14 - CODEWARS KATAS & MOCK LIVE CODING\n\nTarget: Celebrate completing 14 days of intensive dual-track preparation!\n\nVerify with node: node the-gym-prep/practice/codewars_practice.js
 STATUS:CONFIRMED
