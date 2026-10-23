@@ -67,15 +67,15 @@ Every single assignment and drill in Python has an exact twin in JavaScript. Whe
 
 | Assignment Level | Python Practice File | JavaScript Mirror File | Run Commands |
 | :--- | :--- | :--- | :--- |
-| **Level 1: Core Traps** | [drills_common_mistakes.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/drills_common_mistakes.py) | [drills_common_mistakes.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_common_mistakes.js) | `python practice/drills_common_mistakes.py`<br>`node the-gym-prep/practice/drills_common_mistakes.js` |
-| **Level 2: Strings & Arrays** | [drills_strings_lists.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/drills_strings_lists.py) | [drills_strings_arrays.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_strings_arrays.js) | `python practice/drills_strings_lists.py`<br>`node the-gym-prep/practice/drills_strings_arrays.js` |
-| **Level 3: Dicts & Sets** | [drills_dicts_sets.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/drills_dicts_sets.py) | [drills_dicts_sets.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_dicts_sets.js) | `python practice/drills_dicts_sets.py`<br>`node the-gym-prep/practice/drills_dicts_sets.js` |
-| **Level 4: 2D Grids** | [drills_grids.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/drills_grids.py) | [drills_grids.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_grids.js) | `python practice/drills_grids.py`<br>`node the-gym-prep/practice/drills_grids.js` |
-| **Level 5: Q1 Warmups** | [q1_warmups.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/q1_warmups.py) | [q1_warmups.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/q1_warmups.js) | `python practice/q1_warmups.py`<br>`node the-gym-prep/practice/q1_warmups.js` |
-| **Level 6: GCA Q1 Basic** | [gca_q1_basic.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/gca_q1_basic.py) | [gca_q1_basic.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/gca_q1_basic.js) | `python practice/gca_q1_basic.py`<br>`node the-gym-prep/practice/gca_q1_basic.js` |
-| **Level 7: GCA Q2 Data** | [gca_q2_data_manipulation.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/gca_q2_data_manipulation.py) | [gca_q2_data_manipulation.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/gca_q2_data_manipulation.js) | `python practice/gca_q2_data_manipulation.py`<br>`node the-gym-prep/practice/gca_q2_data_manipulation.js` |
-| **Level 8: GCA Q3 Simulation** | [gca_q3_implementation.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/gca_q3_implementation.py) | [gca_q3_implementation.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/gca_q3_implementation.js) | `python practice/gca_q3_implementation.py`<br>`node the-gym-prep/practice/gca_q3_implementation.js` |
-| **Level 9: GCA Q4 Algorithms** | [gca_q4_problem_solving.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/gca_q4_problem_solving.py) | [gca_q4_problem_solving.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/gca_q4_problem_solving.js) | `python practice/gca_q4_problem_solving.py`<br>`node the-gym-prep/practice/gca_q4_problem_solving.js` |
+| **Level 1: Core Traps** | [drills_common_mistakes.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/drills_common_mistakes.py) | [drills_common_mistakes.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_common_mistakes.js) | `python amalitech-prep/practice/drills_common_mistakes.py`<br>`node the-gym-prep/practice/drills_common_mistakes.js` |
+| **Level 2: Strings & Arrays** | [drills_strings_lists.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/drills_strings_lists.py) | [drills_strings_arrays.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_strings_arrays.js) | `python amalitech-prep/practice/drills_strings_lists.py`<br>`node the-gym-prep/practice/drills_strings_arrays.js` |
+| **Level 3: Dicts & Sets** | [drills_dicts_sets.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/drills_dicts_sets.py) | [drills_dicts_sets.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_dicts_sets.js) | `python amalitech-prep/practice/drills_dicts_sets.py`<br>`node the-gym-prep/practice/drills_dicts_sets.js` |
+| **Level 4: 2D Grids** | [drills_grids.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/drills_grids.py) | [drills_grids.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_grids.js) | `python amalitech-prep/practice/drills_grids.py`<br>`node the-gym-prep/practice/drills_grids.js` |
+| **Level 5: Q1 Warmups** | [q1_warmups.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/q1_warmups.py) | [q1_warmups.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/q1_warmups.js) | `python amalitech-prep/practice/q1_warmups.py`<br>`node the-gym-prep/practice/q1_warmups.js` |
+| **Level 6: GCA Q1 Basic** | [gca_q1_basic.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/gca_q1_basic.py) | [gca_q1_basic.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/gca_q1_basic.js) | `python amalitech-prep/practice/gca_q1_basic.py`<br>`node the-gym-prep/practice/gca_q1_basic.js` |
+| **Level 7: GCA Q2 Data** | [gca_q2_data_manipulation.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/gca_q2_data_manipulation.py) | [gca_q2_data_manipulation.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/gca_q2_data_manipulation.js) | `python amalitech-prep/practice/gca_q2_data_manipulation.py`<br>`node the-gym-prep/practice/gca_q2_data_manipulation.js` |
+| **Level 8: GCA Q3 Simulation** | [gca_q3_implementation.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/gca_q3_implementation.py) | [gca_q3_implementation.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/gca_q3_implementation.js) | `python amalitech-prep/practice/gca_q3_implementation.py`<br>`node the-gym-prep/practice/gca_q3_implementation.js` |
+| **Level 9: GCA Q4 Algorithms** | [gca_q4_problem_solving.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/gca_q4_problem_solving.py) | [gca_q4_problem_solving.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/gca_q4_problem_solving.js) | `python amalitech-prep/practice/gca_q4_problem_solving.py`<br>`node the-gym-prep/practice/gca_q4_problem_solving.js` |
 
 ---
 
@@ -83,43 +83,42 @@ Every single assignment and drill in Python has an exact twin in JavaScript. Whe
 
 ### Week 1: Foundation & Muscle Memory
 - **Python (Morning):**
-  - Read: `01-python-essentials.md` & `01b-loops-guide.md`
-  - Practice: `practice/drills_common_mistakes.py` (Sections A–D)
+  - Read: `amalitech-prep/01-python-essentials.md` & `amalitech-prep/01b-loops-guide.md`
+  - Practice: `amalitech-prep/practice/drills_common_mistakes.py` (Sections A–D)
   - Target: Master `%`, `//`, `sum()`, `min()`, `max()`.
 - **JavaScript (Evening):**
   - Read: `the-gym-prep/01-javascript-essentials.md` & `02-loops-and-functions.md`
-  - Practice: `the-gym-prep/practice/drills_js_basics.js` (Sections A, B, C)
+  - Practice: `the-gym-prep/practice/drills_common_mistakes.js` & `the-gym-prep/practice/drills_js_basics.js`
   - CodeWars: Solve Kata 1 (*Multiply*), Kata 2 (*Even or Odd*), Kata 3 (*Opposite*).
 
 ### Week 2: Sequences, Strings & CodeWars Katas
 - **Python (Morning):**
-  - Read: `02-strings-and-lists.md`
-  - Practice: `practice/drills_strings_lists.py` (Sections A–E)
+  - Read: `amalitech-prep/02-strings-and-lists.md`
+  - Practice: `amalitech-prep/practice/drills_strings_lists.py` (Sections A–E)
   - Target: Slicing `[start:stop:step]`, `.split()`, `"".join()`.
 - **JavaScript (Evening):**
   - Read: `the-gym-prep/03-strings-and-arrays.md` & `06-codewars-kata-playbook.md`
-  - Practice: `the-gym-prep/practice/drills_js_basics.js` (Sections D & E)
+  - Practice: `the-gym-prep/practice/drills_strings_arrays.js`
   - CodeWars: Complete `the-gym-prep/practice/codewars_practice.js` (Katas 4 through 8).
 
-### Week 3: Dictionaries, Objects & Interview Theory
+### Week 3: Dictionaries, Objects & 2D Grids
 - **Python (Morning):**
-  - Read: `03-dictionaries-and-sets.md` & `04-matrices-and-simulation.md`
-  - Practice: `practice/drills_dicts_sets.py` & `practice/q1_warmups.py`
+  - Read: `amalitech-prep/03-dictionaries-and-sets.md` & `amalitech-prep/04-matrices-and-simulation.md`
+  - Practice: `amalitech-prep/practice/drills_dicts_sets.py` & `amalitech-prep/practice/drills_grids.py`
   - Target: Hash map tallies, $O(1)$ lookups, 2D matrix coordinate navigation.
 - **JavaScript (Evening):**
   - Read: `the-gym-prep/04-objects-and-data-structures.md` & `05-interview-theory-qa.md`
-  - Practice: `the-gym-prep/practice/drills_objects_maps.js`
-  - Spoken English: Practice speaking the 9 technical interview answers out loud.
+  - Practice: `the-gym-prep/practice/drills_dicts_sets.js` & `the-gym-prep/practice/drills_grids.js`
   - Video Prep: Read and rehearse `the-gym-prep/08-application-video-script.md`.
 
 ### Week 4: Timed Mocks & Final Polish
 - **Python (Morning):**
-  - Read: `05-algorithm-patterns.md`, `10-my-common-mistakes.md`, `08-cheat-sheet.md`
-  - Practice: `practice/q2_data_manipulation.py` & `06-mock-test.md`
+  - Read: `amalitech-prep/05-algorithm-patterns.md`, `amalitech-prep/10-my-common-mistakes.md`, `amalitech-prep/08-cheat-sheet.md`
+  - Practice: `amalitech-prep/practice/gca_q2_data_manipulation.py` & `amalitech-prep/06-mock-test.md`
   - Target: Complete 3 out of 4 problems in under 60 minutes.
 - **JavaScript (Evening):**
   - Read: `the-gym-prep/09-javascript-cheat-sheet.md` & `the-gym-prep/10-my-common-js-mistakes.md`
-  - Practice: `the-gym-prep/practice/mock_interview_test.js`
+  - Practice: `the-gym-prep/practice/gca_q2_data_manipulation.js` & `the-gym-prep/practice/mock_interview_test.js`
   - Application: Record video, copy CodeWars profile link, and submit The Gym application form!
 
 ---
@@ -127,9 +126,9 @@ Every single assignment and drill in Python has an exact twin in JavaScript. Whe
 ## 5. Daily Study Routine (Pure Coding Focus — 2.5 to 3 Hours per Day)
 
 ### Morning Session: Python Track (AmaliTech) — 75 to 90 Minutes (100% Coding)
-1. **Warmup Drills (20 min):** Solve 5 to 10 drills in [drills_strings_lists.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/drills_strings_lists.py) or [drills_dicts_sets.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/drills_dicts_sets.py). Run `python <file>` to test immediately.
-2. **GCA Coding Challenges (50 min):** Solve 1 or 2 full questions from [gca_q1_basic.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/gca_q1_basic.py), [gca_q2_data_manipulation.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/gca_q2_data_manipulation.py), or [gca_q3_implementation.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/gca_q3_implementation.py). Trace on paper first!
-3. **Bug Check (10 min):** Check edge cases (empty list, single element, negative numbers) against [10-my-common-mistakes.md](file:///c:/Users/user/Documents/AmaliTech-Prep/10-my-common-mistakes.md).
+1. **Warmup Drills (20 min):** Solve 5 to 10 drills in [drills_strings_lists.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/drills_strings_lists.py) or [drills_dicts_sets.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/drills_dicts_sets.py). Run `python <file>` to test immediately.
+2. **GCA Coding Challenges (50 min):** Solve 1 or 2 full questions from [gca_q1_basic.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/gca_q1_basic.py), [gca_q2_data_manipulation.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/gca_q2_data_manipulation.py), or [gca_q3_implementation.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/gca_q3_implementation.py). Trace on paper first!
+3. **Bug Check (10 min):** Check edge cases (empty list, single element, negative numbers) against [10-my-common-mistakes.md](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/10-my-common-mistakes.md).
 
 ### Evening Session: JavaScript Track (The Gym) — 75 to 90 Minutes (100% Coding)
 1. **Mirror Coding Drills (35 min):** Open the JavaScript twin file of your morning session: [drills_strings_arrays.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_strings_arrays.js) or [drills_dicts_sets.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_dicts_sets.js). Implement functions and run `node <file>` to see green passes.

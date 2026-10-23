@@ -292,7 +292,8 @@ Once those 7 syntax questions are answered, write the 5 Universal Algorithm Patt
 
 ## Related Files in This Workspace
 - Master Study Roadmap: [DUAL_TRACK_ROADMAP.md](file:///c:/Users/user/Documents/AmaliTech-Prep/DUAL_TRACK_ROADMAP.md)
-- Python Practice Drills: [practice/drills_strings_lists.py](file:///c:/Users/user/Documents/AmaliTech-Prep/practice/drills_strings_lists.py)
+- Python Track Hub: [amalitech-prep/README.md](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/README.md)
+- Python Practice Drills: [amalitech-prep/practice/drills_strings_lists.py](file:///c:/Users/user/Documents/AmaliTech-Prep/amalitech-prep/practice/drills_strings_lists.py)
 - JavaScript Hub: [the-gym-prep/README.md](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/README.md)
-- JavaScript Drills: [the-gym-prep/practice/drills_js_basics.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_js_basics.js)
+- JavaScript Drills: [the-gym-prep/practice/drills_strings_arrays.js](file:///c:/Users/user/Documents/AmaliTech-Prep/the-gym-prep/practice/drills_strings_arrays.js)
 
