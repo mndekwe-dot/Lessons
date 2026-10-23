@@ -204,13 +204,13 @@ def generate_ics():
             "description": f"DAY {item['day']} OF 14 - CODESIGNAL GCA PRACTICE\\n\\nGoal: {item['py_gca']}\\n\\nStrategy: Solve on paper first, code, and test edge cases."
         })
         
-        # Event 3: Afternoon English & Video & Cognitive (14:30 - 16:00)
+        # Event 3: Afternoon Coding: Cross-Language Algorithms & Problem Solving (14:30 - 16:00)
         events.append({
-            "uid": f"thegym-english-day{item['day']}-{date_str}@prep",
+            "uid": f"crosslang-coding-day{item['day']}-{date_str}@prep",
             "start": f"{date_str}T143000",
             "end": f"{date_str}T160000",
-            "summary": f"[Interview & Video] {item['en_title']}",
-            "description": f"DAY {item['day']} OF 14 - ENGLISH & APPLICATION PREP\\n\\n{item['en_desc']}\\n\\nWorkspace guide: the-gym-prep/05-interview-theory-qa.md"
+            "summary": f"[Coding Focus] {item['en_title'].replace('Interview English: ', 'Code & Practice: ').replace('Application Video: ', 'Live Code: ')}",
+            "description": f"DAY {item['day']} OF 14 - PURE CODING PRACTICE\\n\\n{item['en_desc']}\\n\\nWorkspace file: the-gym-prep/practice/gca_q2_data_manipulation.js"
         })
         
         # Event 4: Evening JS Core (16:30 - 18:30)

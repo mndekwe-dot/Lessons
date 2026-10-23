@@ -48,18 +48,24 @@ You will submit an application form requiring:
 
 ---
 
-## Interactive Practice Drills
+## Interactive Practice Drills (1-to-1 Parity with Python)
 
-Run these drills right in your terminal using Node.js:
+Every single assignment and drill in Python has an exact counterpart in JavaScript. Run these drills directly in your terminal using Node.js:
 
-| Drill File | Content | Command to Run |
-|---|---|---|
-| [`practice/drills_js_basics.js`](practice/drills_js_basics.js) | 27 foundational drills covering math, strings, arrays, objects | `node the-gym-prep/practice/drills_js_basics.js` |
-| [`practice/drills_common_mistakes.js`](practice/drills_common_mistakes.js) | 9 drills eliminating the classic bugs that fail JS tests | `node the-gym-prep/practice/drills_common_mistakes.js` |
-| [`practice/drills_objects_maps.js`](practice/drills_objects_maps.js) | 8 drills covering frequency counting, tallies, and sets | `node the-gym-prep/practice/drills_objects_maps.js` |
-| [`practice/codewars_practice.js`](practice/codewars_practice.js) | 10 classic 8 kyu and 7 kyu Codewars challenges | `node the-gym-prep/practice/codewars_practice.js` |
-| [`practice/mock_interview_test.js`](practice/mock_interview_test.js) | Timed coding challenge for The Gym technical interview | `node the-gym-prep/practice/mock_interview_test.js` |
-| [`practice/solutions/solutions_drills_explained.md`](practice/solutions/solutions_drills_explained.md) | Complete solution code with line-by-line English explanations | Reference when stuck |
+| JavaScript Practice File | Matching Python File | Focus | Command to Run |
+|---|---|---|---|
+| [`practice/drills_common_mistakes.js`](practice/drills_common_mistakes.js) | `practice/drills_common_mistakes.py` | Variables, types, scope, equality | `node the-gym-prep/practice/drills_common_mistakes.js` |
+| [`practice/drills_strings_arrays.js`](practice/drills_strings_arrays.js) | `practice/drills_strings_lists.py` | Slicing, splitting, joining, reversing | `node the-gym-prep/practice/drills_strings_arrays.js` |
+| [`practice/drills_dicts_sets.js`](practice/drills_dicts_sets.js) | `practice/drills_dicts_sets.py` | Tally sheets, key lookups, unique sets | `node the-gym-prep/practice/drills_dicts_sets.js` |
+| [`practice/drills_grids.js`](practice/drills_grids.js) | `practice/drills_grids.py` | 2D matrices, directions, neighbor cells | `node the-gym-prep/practice/drills_grids.js` |
+| [`practice/q1_warmups.js`](practice/q1_warmups.js) | `practice/q1_warmups.py` | Basic warmups (century, leap year, digits) | `node the-gym-prep/practice/q1_warmups.js` |
+| [`practice/gca_q1_basic.js`](practice/gca_q1_basic.js) | `practice/gca_q1_basic.py` | GCA Q1 basic problems | `node the-gym-prep/practice/gca_q1_basic.js` |
+| [`practice/gca_q2_data_manipulation.js`](practice/gca_q2_data_manipulation.js) | `practice/gca_q2_data_manipulation.py` | GCA Q2 string & list algorithms | `node the-gym-prep/practice/gca_q2_data_manipulation.js` |
+| [`practice/gca_q3_implementation.js`](practice/gca_q3_implementation.js) | `practice/gca_q3_implementation.py` | GCA Q3 grid & simulation problems | `node the-gym-prep/practice/gca_q3_implementation.js` |
+| [`practice/gca_q4_problem_solving.js`](practice/gca_q4_problem_solving.js) | `practice/gca_q4_problem_solving.py` | GCA Q4 optimal algorithms & hash maps | `node the-gym-prep/practice/gca_q4_problem_solving.js` |
+| [`practice/codewars_practice.js`](practice/codewars_practice.js) | Codewars 8/7 kyu | 10 classic Codewars algorithm katas | `node the-gym-prep/practice/codewars_practice.js` |
+| [`practice/mock_interview_test.js`](practice/mock_interview_test.js) | Timed Assessment | Timed coding challenge for live technical interviews | `node the-gym-prep/practice/mock_interview_test.js` |
+| [`practice/solutions/solutions_drills_explained.md`](practice/solutions/solutions_drills_explained.md) | Solutions & Notes | Complete solution code with explanations | Reference when stuck |
 
 ---
 
