@@ -226,4 +226,91 @@ If a bus has **3 seats** (`arr.length === 3`), seats are numbered `0, 1, 2`.
 | `arr[arr.length - 1]` | **Accessing last item (Python `arr[-1]`)** | Direct lookup of the last item in the array. |
 | `arr.length + 1` | **NEVER in loops!** | Goes past the end of the array into empty space (`undefined`). |
 
+---
+
+## ⚠️ MISTAKE 13: Numbers Do NOT Have `.length` ⚠️
+
+```javascript
+// WRONG:
+let n = 1234;
+while (n.length > 0) { ... } // 1234.length is undefined! undefined > 0 is false!
+
+// CORRECT:
+while (n > 0) { ... }        // For math / numbers, check if n > 0!
+```
+**The Rule:** Only arrays and strings have `.length`. For raw numbers, check `while (n > 0)`. If you must count digits with length, convert to string first: `String(n).length`.
+
+---
+
+## ⚠️ MISTAKE 14: Pushing the Index `i` Instead of the Item `arr[i]` ⚠️
+
+```javascript
+// WRONG:
+for (let i = 0; i < arr.length; i += 2) {
+  result.push(i);      // Pushes 0, 2, 4 (the index numbers!)
+}
+
+// CORRECT:
+for (let i = 0; i < arr.length; i += 2) {
+  result.push(arr[i]); // Pushes "a", "c", "e" (the actual data!)
+}
+```
+**The Rule:** `i` is the seat number; `arr[i]` is the person in the seat. When collecting items from an array, push `arr[i]`.
+
+---
+
+## ⚠️ MISTAKE 15: Starting `.reduce()` with `0` for Multiplication ⚠️
+
+```javascript
+// WRONG:
+arr.reduce((acc, x) => acc * x, 0); // 0 * x = 0! Result is ALWAYS 0!
+
+// CORRECT:
+arr.reduce((acc, x) => acc * x, 1); // 1 * x = x! (Or omit 1 to use arr[0])
+```
+**The Rule:** For sums, start with `0` ($0 + x = x$). For products, start with `1` ($1 \times x = x$).
+
+---
+
+## ⚠️ MISTAKE 16: Object Keys Without Quotes in Brackets ⚠️
+
+```javascript
+// WRONG:
+items[inStock];   // ReferenceError: inStock is not defined (looks for variable inStock)
+
+// CORRECT:
+items.inStock;     // Dot notation (cleanest!)
+items["inStock"];  // Bracket notation requires string quotes!
+```
+**The Rule:** Use dot notation `item.prop` by default. Only use brackets without quotes if the key is stored inside a variable: `const key = "inStock"; item[key]`.
+
+---
+
+## ⚠️ MISTAKE 17: Forgetting `i++` or the Update Step (Infinite Loop) ⚠️
+
+```javascript
+// WRONG:
+for (let i = 0; i < arr.length;) { ... } // i never increments -> hangs forever!
+while (n > 0) { const digit = n % 10; }   // n is never chopped -> hangs forever!
+
+// CORRECT:
+for (let i = 0; i < arr.length; i++) { ... }
+while (n > 0) { n = Math.floor(n / 10); }
+```
+**The Rule:** Every loop must have an engine step that changes the counter or condition variable toward the finish line on every lap.
+
+---
+
+## ⚠️ MISTAKE 18: Inverting the `while` Condition (Thinking "Until" Instead of "While") ⚠️
+
+```javascript
+// WRONG (Thinking in English: "Keep going until balance reaches threshold"):
+while (balance > threshold) { ... } // If balance starts smaller, condition is false immediately!
+
+// CORRECT (Code logic: "Keep going as long as balance is STILL UNDER threshold"):
+while (balance < threshold) { ... }
+```
+**The Rule:** `while` runs when the condition is **TRUE**, not when it is false. Ask: *"Under what condition should this loop keep running?"*
+
+
 
