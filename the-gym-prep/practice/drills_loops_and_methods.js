@@ -6,7 +6,8 @@
  *     node the-gym-prep/practice/drills_loops_and_methods.js
  * 
  * Instructions:
- * Work through each section in order. Run the file to verify your solutions.
+ * Work through each section in order. Replace "return null;" with your logic.
+ * When stuck, peek at: the-gym-prep/practice/solutions/solutions_loops_and_methods.js
  */
 
 // ===========================================================================
@@ -15,47 +16,32 @@
 
 // 1.1 Sum all numbers in an array. [1, 2, 3, 4] -> 10
 function sumWithForOf(arr) {
-  let total = 0;
-  for (const num of arr) {
-    total += num;
-  }
-  return total;
+  // YOUR CODE HERE
+  return null;
 }
 
 // 1.2 Count how many strings have length > 3. ["cat", "zebra", "lion", "ox"] -> 2
 function countLongWords(words) {
-  let count = 0;
-  for (const word of words) {
-    if (word.length > 3) count++;
-  }
-  return count;
+  // YOUR CODE HERE
+  return null;
 }
 
 // 1.3 Find the maximum number in an array. [10, 45, 3, 89, 22] -> 89
 function maxWithForOf(arr) {
-  let champion = arr[0];
-  for (const num of arr) {
-    if (num > champion) champion = num;
-  }
-  return champion;
+  // YOUR CODE HERE
+  return null;
 }
 
 // 1.4 Check if an array contains any negative number. [1, 4, -2, 8] -> true
 function hasNegativeNumber(arr) {
-  for (const num of arr) {
-    if (num < 0) return true;
-  }
-  return false;
+  // YOUR CODE HERE
+  return null;
 }
 
 // 1.5 Join words with spaces into a single sentence. ["Code", "is", "fun"] -> "Code is fun"
 function joinWordsManual(words) {
-  if (words.length === 0) return "";
-  let sentence = "";
-  for (const word of words) {
-    sentence += (sentence === "" ? "" : " ") + word;
-  }
-  return sentence;
+  // YOUR CODE HERE
+  return null;
 }
 
 // ===========================================================================
@@ -64,46 +50,32 @@ function joinWordsManual(words) {
 
 // 2.1 Return an array with numbers from 1 up to n. 4 -> [1, 2, 3, 4]
 function rangeUpTo(n) {
-  const result = [];
-  for (let i = 1; i <= n; i++) {
-    result.push(i);
-  }
-  return result;
+  // YOUR CODE HERE
+  return null;
 }
 
 // 2.2 Return every second item starting at index 0. ["a", "b", "c", "d", "e"] -> ["a", "c", "e"]
 function everyOtherItem(arr) {
-  const result = [];
-  for (let i = 0; i < arr.length; i += 2) {
-    result.push(arr[i]);
-  }
-  return result;
+  // YOUR CODE HERE
+  return null;
 }
 
 // 2.3 Sum adjacent pairs: [1, 2, 3, 4] -> [3, 5, 7]
 function adjacentPairSums(arr) {
-  const result = [];
-  for (let i = 0; i < arr.length - 1; i++) {
-    result.push(arr[i] + arr[i + 1]);
-  }
-  return result;
+  // YOUR CODE HERE
+  return null;
 }
 
 // 2.4 Reverse an array using a backwards loop. [1, 2, 3] -> [3, 2, 1]
 function reverseWithLoop(arr) {
-  const result = [];
-  for (let i = arr.length - 1; i >= 0; i--) {
-    result.push(arr[i]);
-  }
-  return result;
+  // YOUR CODE HERE
+  return null;
 }
 
 // 2.5 Find the index of the first occurrence of target, or -1. ([10, 20, 30], 20) -> 1
 function indexOfManual(arr, target) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === target) return i;
-  }
-  return -1;
+  // YOUR CODE HERE
+  return null;
 }
 
 // ===========================================================================
@@ -112,46 +84,26 @@ function indexOfManual(arr, target) {
 
 // 3.1 Keep halving a number (integer division) until it reaches 1. Count steps. 16 -> 4 (16->8->4->2->1)
 function countHalvings(n) {
-  let steps = 0;
-  let current = n;
-  while (current > 1) {
-    current = Math.floor(current / 2);
-    steps++;
-  }
-  return steps;
+  // YOUR CODE HERE
+  return null;
 }
 
 // 3.2 Sum the digits of a number. 123 -> 6
 function sumDigitsWithWhile(n) {
-  let sum = 0;
-  let remaining = Math.abs(n);
-  while (remaining > 0) {
-    sum += remaining % 10;
-    remaining = Math.floor(remaining / 10);
-  }
-  return sum;
+  // YOUR CODE HERE
+  return null;
 }
 
 // 3.3 Investment growth: deposit grows by rate% each year. Years until threshold? (100, 20, 150) -> 3
 function yearsToGrow(deposit, rate, threshold) {
-  let years = 0;
-  let balance = deposit;
-  while (balance < threshold) {
-    balance += balance * (rate / 100);
-    years++;
-  }
-  return years;
+  // YOUR CODE HERE
+  return null;
 }
 
 // 3.4 Reverse a positive number mathematically using while: 1234 -> 4321
 function reverseNumberMath(n) {
-  let reversed = 0;
-  let current = n;
-  while (current > 0) {
-    reversed = reversed * 10 + (current % 10);
-    current = Math.floor(current / 10);
-  }
-  return reversed;
+  // YOUR CODE HERE
+  return null;
 }
 
 // ===========================================================================
@@ -160,27 +112,32 @@ function reverseNumberMath(n) {
 
 // 4.1 Double all numbers: [1, 2, 3] -> [2, 4, 6]
 function doubleWithMap(arr) {
-  return arr.map(x => x * 2);
+  // YOUR CODE HERE
+  return null;
 }
 
 // 4.2 Convert all strings to uppercase: ["hi", "dev"] -> ["HI", "DEV"]
 function uppercaseWithMap(arr) {
-  return arr.map(s => s.toUpperCase());
+  // YOUR CODE HERE
+  return null;
 }
 
 // 4.3 Extract lengths of words: ["apple", "pie"] -> [5, 3]
 function wordLengthsWithMap(words) {
-  return words.map(w => w.length);
+  // YOUR CODE HERE
+  return null;
 }
 
 // 4.4 Extract names from user objects: [{name: "Ama"}, {name: "Eric"}] -> ["Ama", "Eric"]
 function extractNamesWithMap(users) {
-  return users.map(u => u.name);
+  // YOUR CODE HERE
+  return null;
 }
 
 // 4.5 Add tax (18%) to all prices, rounded to 2 decimals: [100, 50] -> [118, 59]
 function addTaxWithMap(prices) {
-  return prices.map(p => Math.round(p * 1.18 * 100) / 100);
+  // YOUR CODE HERE
+  return null;
 }
 
 // ===========================================================================
@@ -189,27 +146,32 @@ function addTaxWithMap(prices) {
 
 // 5.1 Keep only even numbers: [1, 2, 3, 4, 5] -> [2, 4]
 function onlyEvensWithFilter(arr) {
-  return arr.filter(x => x % 2 === 0);
+  // YOUR CODE HERE
+  return null;
 }
 
 // 5.2 Keep only words with more than 3 letters: ["a", "dog", "elephant"] -> ["elephant"]
 function longWordsWithFilter(words) {
-  return words.filter(w => w.length > 3);
+  // YOUR CODE HERE
+  return null;
 }
 
 // 5.3 Filter out null and undefined values: [1, null, 2, undefined, 3] -> [1, 2, 3]
 function removeNullishWithFilter(arr) {
-  return arr.filter(x => x !== null && x !== undefined);
+  // YOUR CODE HERE
+  return null;
 }
 
 // 5.4 Keep only products that are in stock: [{id: 1, inStock: true}, {id: 2, inStock: false}]
 function inStockProductsWithFilter(products) {
-  return products.filter(p => p.inStock);
+  // YOUR CODE HERE
+  return null;
 }
 
 // 5.5 Keep only numbers within range [min, max] inclusive: ([10, 5, 25, 30], 10, 25) -> [10, 25]
 function numbersInRangeWithFilter(nums, min, max) {
-  return nums.filter(x => x >= min && x <= max);
+  // YOUR CODE HERE
+  return null;
 }
 
 // ===========================================================================
@@ -218,30 +180,32 @@ function numbersInRangeWithFilter(nums, min, max) {
 
 // 6.1 Sum all numbers: [1, 2, 3, 4] -> 10
 function sumWithReduce(arr) {
-  return arr.reduce((sum, x) => sum + x, 0);
+  // YOUR CODE HERE
+  return null;
 }
 
 // 6.2 Multiply all numbers (product): [2, 3, 4] -> 24
 function productWithReduce(arr) {
-  return arr.reduce((prod, x) => prod * x, 1);
+  // YOUR CODE HERE
+  return null;
 }
 
 // 6.3 Find the maximum number using reduce: [5, 12, 8, 130, 44] -> 130
 function maxWithReduce(arr) {
-  return arr.reduce((max, x) => (x > max ? x : max), arr[0]);
+  // YOUR CODE HERE
+  return null;
 }
 
 // 6.4 Count occurrences of items into an object: ["a", "b", "a"] -> { a: 2, b: 1 }
 function frequencyWithReduce(arr) {
-  return arr.reduce((acc, x) => {
-    acc[x] = (acc[x] || 0) + 1;
-    return acc;
-  }, {});
+  // YOUR CODE HERE
+  return null;
 }
 
 // 6.5 Flatten an array of arrays one level: [[1, 2], [3, 4]] -> [1, 2, 3, 4]
 function flattenWithReduce(arr) {
-  return arr.reduce((acc, row) => acc.concat(row), []);
+  // YOUR CODE HERE
+  return null;
 }
 
 // ===========================================================================
