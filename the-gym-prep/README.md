@@ -45,6 +45,7 @@ You will submit an application form requiring:
 | 10 | [`10-my-common-js-mistakes.md`](10-my-common-js-mistakes.md) | Common JS Mistakes | The 10 traps that fail interviews (`sort()` on numbers, `==` vs `===`, mutating references). |
 | 11 | [`11-javascript-glossary.md`](11-javascript-glossary.md) | Terminology Glossary | Clear definitions of all technical jargon (closures, hoisting, coercion, callbacks). |
 | 12 | [`12-mock-interview-simulation.md`](12-mock-interview-simulation.md) | Mock Interview Test | 45-minute timed simulation with theory questions, coding challenges, and scoring rubric. |
+| 13 | [`13-javascript-patterns.md`](13-javascript-patterns.md) | Loop & Algorithm Patterns | The 5 fundamental loop patterns (accumulator, filter, transformer, champion, search) and algorithm weapons. |
 
 ---
 
