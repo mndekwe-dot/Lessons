@@ -167,3 +167,30 @@ const x = 7 // 2;  <- This just means x = 7, with a comment "// 2"!
 const x = Math.floor(7 / 2); // 3 (CORRECT)
 ```
 
+---
+
+## ⚠️ MISTAKE 11: Declaring the Container or Returning Inside the Loop ⚠️
+
+```javascript
+// WRONG:
+function doubleAll(arr) {
+  for (const num of arr) {
+    const result = [];    // Wiped clean on every iteration!
+    result.push(num * 2);
+    return result;        // Stops on the very first round!
+  }
+}
+
+// CORRECT:
+function doubleAll(arr) {
+  const result = []; // 1. Built once BEFORE the loop
+
+  for (const num of arr) {
+    result.push(num * 2); // 2. Collects on each lap
+  }
+
+  return result; // 3. Returned AFTER the loop finishes
+}
+```
+**The Rule:** Your container (`let total = 0` or `const result = []`) must be created **before** the loop. Your `return` statement must be placed **after** the loop closing brace `}`.
+

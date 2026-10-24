@@ -38,6 +38,45 @@ Every loop problem follows this exact 3-step physical structure:
 > [!CAUTION]
 > **The Most Common Beginner Mistake:** Placing `return` inside the loop body. If `return` is inside the loop, the function stops on the very first round and never inspects the rest of the items!
 
+### Why Can't the Container Go Inside the Loop?
+
+A very common beginner question is: *"Why can't I put `const result = []` or `let total = 0` inside the loop?"*
+
+There are two major reasons:
+
+#### 1. The Shopping Cart Analogy (The Wipeout Trap)
+Think of your container as a **shopping cart**:
+- **Outside the loop (Correct):** You take **one cart** before entering the store. Every item you grab goes into that same cart. At checkout (after the loop), your cart holds everything: `[2, 4, 6]`.
+- **Inside the loop (Wrong):** Every time you look at an item, you throw away your current cart, grab a **brand-new empty cart**, and put only that one item inside.
+  - Round 1 (sees 1): new empty cart $\rightarrow$ adds 2 $\rightarrow$ cart is `[2]`.
+  - Round 2 (sees 2): **throws away cart!** new empty cart $\rightarrow$ adds 4 $\rightarrow$ the 2 is lost forever!
+  - Round 3 (sees 3): **throws away cart!** new empty cart $\rightarrow$ adds 6 $\rightarrow$ the 4 is lost forever!
+
+#### 2. Block Scope (ReferenceError)
+Variables declared with `const` or `let` inside `{ ... }` only exist inside those braces:
+```javascript
+// WRONG:
+function doubleAll(arr) {
+  for (const num of arr) {
+    const result = [];    // Created and destroyed on every single lap!
+    result.push(num * 2);
+  } // <--- 'result' dies here!
+
+  return result; // ERROR: ReferenceError: result is not defined
+}
+
+// CORRECT:
+function doubleAll(arr) {
+  const result = []; // 1. Built once BEFORE the loop
+
+  for (const num of arr) {
+    result.push(num * 2); // 2. Collects on every lap
+  }
+
+  return result; // 3. Survives and returns all collected items
+}
+```
+
 ---
 
 ## 2. The 5 Fundamental Loop Patterns
