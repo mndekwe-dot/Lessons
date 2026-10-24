@@ -180,6 +180,16 @@ const total = prices.reduce((acc, curr) => acc + curr, 0);
 console.log(total); // 75 (0 + 10 + 25 + 40)
 ```
 
+### The Conversion Bridge: Transforming `for` Loops into Methods
+
+| Goal | Manual `for` Loop | Modern Method One-Liner |
+|---|---|---|
+| **Transform every item** | `for (const x of arr) res.push(x * 2)` | `arr.map(x => x * 2)` |
+| **Keep matching items** | `for (const x of arr) if (x > 0) res.push(x)` | `arr.filter(x => x > 0)` |
+| **Combine into one sum** | `for (const x of arr) total += x` | `arr.reduce((acc, x) => acc + x, 0)` |
+
+*(For full step-by-step conversion walkthroughs with side-by-side recipes, see [`13-javascript-patterns.md`](13-javascript-patterns.md#5-the-modern-shortcut-bridge-from-loops-to-methods)).*
+
 ---
 
 ## 7. The Famous JavaScript Sorting Trap (Must Know!)
