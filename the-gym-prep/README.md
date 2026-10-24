@@ -56,6 +56,7 @@ Every single assignment and drill in Python has an exact counterpart in JavaScri
 | JavaScript Practice File | Matching Python File | Focus | Command to Run |
 |---|---|---|---|
 | [`practice/drills_common_mistakes.js`](practice/drills_common_mistakes.js) | `practice/drills_common_mistakes.py` | Variables, types, scope, equality | `node the-gym-prep/practice/drills_common_mistakes.js` |
+| [`practice/drills_ternary.js`](practice/drills_ternary.js) | Ternary Operator Mastery | 1-line `if/else`, comparisons, pluralization, chaining | `node the-gym-prep/practice/drills_ternary.js` |
 | [`practice/drills_loops_and_methods.js`](practice/drills_loops_and_methods.js) | Loop Mastery | `for`, `while`, `map`, `filter`, `reduce` drills | `node the-gym-prep/practice/drills_loops_and_methods.js` |
 | [`practice/drills_strings_arrays.js`](practice/drills_strings_arrays.js) | `practice/drills_strings_lists.py` | Slicing, splitting, joining, reversing | `node the-gym-prep/practice/drills_strings_arrays.js` |
 | [`practice/drills_dicts_sets.js`](practice/drills_dicts_sets.js) | `practice/drills_dicts_sets.py` | Tally sheets, key lookups, unique sets | `node the-gym-prep/practice/drills_dicts_sets.js` |
