@@ -48,6 +48,35 @@ for (let i = 0; i <= 10; i += 2) {
 2. `i < 5;` $\to$ Keep going as long as $i < 5$ (stops when $i$ hits 5).
 3. `i++` $\to$ Increase $i$ by 1 after each loop.
 
+### Loop Boundary Rules: `<` vs `<=`, and `arr.length - 1`
+
+Because JavaScript arrays are **zero-indexed**, an array with 3 items has indices `0, 1, 2`. The index `3` does not exist!
+
+```
+[ Index 0 ]    [ Index 1 ]    [ Index 2 ]      [ Index 3 ]
+  "first"       "second"       "third"        undefined (DOES NOT EXIST)
+```
+
+- **Standard forward traversal (Always `<`):**
+  ```javascript
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]); // Safely visits 0, 1, 2
+  }
+  ```
+  *(Never use `i <= arr.length`, because on the final round `arr[arr.length]` is `undefined`).*
+
+- **When to use `arr.length - 1`:**
+  1. **Directly accessing the last item (Python's `arr[-1]`):**
+     `const last = arr[arr.length - 1];`
+  2. **Backwards loop:**
+     `for (let i = arr.length - 1; i >= 0; i--)`
+  3. **Comparing adjacent neighbors (`arr[i]` and `arr[i + 1]`):**
+     `for (let i = 0; i < arr.length - 1; i++)`
+     *(Stops 1 index early so `arr[i + 1]` never falls off the end into `undefined`).*
+
+- **When to use `arr.length + 1`:**
+  **Never in loops!** Going past `arr.length` attempts to read elements that do not exist.
+
 ---
 
 ## 2. The while Loop

@@ -194,3 +194,36 @@ function doubleAll(arr) {
 ```
 **The Rule:** Your container (`let total = 0` or `const result = []`) must be created **before** the loop. Your `return` statement must be placed **after** the loop closing brace `}`.
 
+---
+
+## ⚠️ MISTAKE 12: Loop Boundaries — Using `<=` instead of `<` ⚠️
+
+```javascript
+// WRONG:
+for (let i = 0; i <= arr.length; i++) {
+  console.log(arr[i]); // On the last turn, arr[arr.length] is undefined!
+}
+
+// CORRECT:
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]); // Safely visits indexes 0 up to length - 1
+}
+```
+
+### The Bus Seat Analogy
+If a bus has **3 seats** (`arr.length === 3`), seats are numbered `0, 1, 2`.  
+**Seat 3 does not exist!**  
+- `i < 3` visits `0, 1, 2` ✅
+- `i <= 3` visits `0, 1, 2, 3` ❌ (Seat 3 is `undefined`, causing `NaN` or crashes).
+
+### When to Use `arr.length - 1` vs `arr.length + 1`
+
+| Header | When to Use | Why |
+|---|---|---|
+| `i < arr.length` | **Normal loop (every element)** | Standard forward traversal. Runs from `0` to `length - 1`. |
+| `i < arr.length - 1` | **Comparing neighbors (`arr[i + 1]`)** | Stops 1 index early so `arr[i + 1]` never falls off the edge into `undefined`. |
+| `i = arr.length - 1; i >= 0; i--` | **Backwards loop** | Starts at the last valid index and walks down to index `0`. |
+| `arr[arr.length - 1]` | **Accessing last item (Python `arr[-1]`)** | Direct lookup of the last item in the array. |
+| `arr.length + 1` | **NEVER in loops!** | Goes past the end of the array into empty space (`undefined`). |
+
+
