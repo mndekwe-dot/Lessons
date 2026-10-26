@@ -64,9 +64,14 @@ Every single assignment and drill in Python has an exact counterpart in JavaScri
 | [`practice/drills_grids.js`](practice/drills_grids.js) | `practice/drills_grids.py` | 2D matrices, directions, neighbor cells | `node the-gym-prep/practice/drills_grids.js` |
 | [`practice/q1_warmups.js`](practice/q1_warmups.js) | `practice/q1_warmups.py` | Basic warmups (century, leap year, digits) | `node the-gym-prep/practice/q1_warmups.js` |
 | [`practice/gca_q1_basic.js`](practice/gca_q1_basic.js) | `practice/gca_q1_basic.py` | GCA Q1 basic problems | `node the-gym-prep/practice/gca_q1_basic.js` |
+| [`practice/q2_data_manipulation.js`](practice/q2_data_manipulation.js) | `practice/q2_data_manipulation.py` | Q2 strings & borders (anagrams, longest strings) | `node the-gym-prep/practice/q2_data_manipulation.js` |
+| [`practice/q2b_list_rearranging.js`](practice/q2b_list_rearranging.js) | `practice/q2b_list_rearranging.py` | Array rearranging (move zeros, evens/odds, rotate) | `node the-gym-prep/practice/q2b_list_rearranging.js` |
 | [`practice/gca_q2_data_manipulation.js`](practice/gca_q2_data_manipulation.js) | `practice/gca_q2_data_manipulation.py` | GCA Q2 string & list algorithms | `node the-gym-prep/practice/gca_q2_data_manipulation.js` |
+| [`practice/q3_implementation.js`](practice/q3_implementation.js) | `practice/q3_implementation.py` | Q3 grids (minesweeper, haunted matrix, spirals) | `node the-gym-prep/practice/q3_implementation.js` |
 | [`practice/gca_q3_implementation.js`](practice/gca_q3_implementation.js) | `practice/gca_q3_implementation.py` | GCA Q3 grid & simulation problems | `node the-gym-prep/practice/gca_q3_implementation.js` |
+| [`practice/q4_problem_solving.js`](practice/q4_problem_solving.js) | `practice/q4_problem_solving.py` | Q4 optimization (sliding window, two pointers) | `node the-gym-prep/practice/q4_problem_solving.js` |
 | [`practice/gca_q4_problem_solving.js`](practice/gca_q4_problem_solving.js) | `practice/gca_q4_problem_solving.py` | GCA Q4 optimal algorithms & hash maps | `node the-gym-prep/practice/gca_q4_problem_solving.js` |
+| [`practice/mock_test_gca.js`](practice/mock_test_gca.js) | `practice/mock_answers.py` | Full 70-min CodeSignal GCA Mock Exam in JS | `node the-gym-prep/practice/mock_test_gca.js` |
 | [`practice/codewars_practice.js`](practice/codewars_practice.js) | Codewars 8/7 kyu | 10 classic Codewars algorithm katas | `node the-gym-prep/practice/codewars_practice.js` |
 | [`practice/mock_interview_test.js`](practice/mock_interview_test.js) | Timed Assessment | Timed coding challenge for live technical interviews | `node the-gym-prep/practice/mock_interview_test.js` |
 | [`practice/solutions/solutions_drills_explained.md`](practice/solutions/solutions_drills_explained.md) | Solutions & Notes | Complete solution code with explanations | Reference when stuck |
