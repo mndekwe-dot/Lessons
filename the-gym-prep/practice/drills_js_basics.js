@@ -15,32 +15,31 @@
 
 // 1. Add two numbers and return the sum.
 function add(a, b) {
-  // YOUR CODE HERE
-  return null;
+  return a+b;
 }
 
 // 2. Return true if n is an even number, false if odd.
 function isEven(n) {
-  // YOUR CODE HERE
-  return null;
+  if (n % 2 === 0){
+    return true
+  } else{
+    return false
+  }
 }
 
 // 3. Integer division: divide a by b and round DOWN (like Python a // b).
 function intDivide(a, b) {
-  // YOUR CODE HERE
-  return null;
+  return Math.floor(a/b);
 }
 
 // 4. Return the opposite of a number: 5 -> -5, -10 -> 10.
 function opposite(n) {
-  // YOUR CODE HERE
-  return null;
+  return -n;
 }
 
 // 5. Return the maximum of three numbers.
 function maxOfThree(a, b, c) {
-  // YOUR CODE HERE
-  return null;
+  return Math.max(a,b,c);
 }
 
 // =========================================================================
@@ -49,38 +48,36 @@ function maxOfThree(a, b, c) {
 
 // 6. Return the first character of a string. "hello" -> "h"
 function firstChar(s) {
-  // YOUR CODE HERE
-  return null;
+  return s[0];
 }
 
 // 7. Return the last character of a string. "hello" -> "o"
 function lastChar(s) {
-  // YOUR CODE HERE
-  return null;
+  return s[s.length - 1];
 }
 
 // 8. Return the string in UPPERCASE. "kigali" -> "KIGALI"
 function shout(s) {
-  // YOUR CODE HERE
-  return null;
+  return s.toUpperCase();
 }
 
 // 9. Remove spaces from both ends of a string. "  hi  " -> "hi"
 function trimSpaces(s) {
-  // YOUR CODE HERE
-  return null;
+  return s.trim();
 }
 
 // 10. Return the reversed string. "hello" -> "olleh"
 function reverseStr(s) {
-  // YOUR CODE HERE
-  return null;
+  return s.split("").reverse().join("");
 }
 
 // 11. Return true if s starts with a vowel (a, e, i, o, u), false otherwise.
 function startsWithVowel(s) {
-  // YOUR CODE HERE
-  return null;
+  if ("aeoiuAEIOU".includes(s[0])){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // =========================================================================
@@ -89,44 +86,61 @@ function startsWithVowel(s) {
 
 // 12. Return the number of items in the array. [1, 2, 3] -> 3
 function getLength(arr) {
-  // YOUR CODE HERE
-  return null;
+  return arr.length;
 }
 
 // 13. Add item x to the END of array and return the array. ([1, 2], 3) -> [1, 2, 3]
 function addToEnd(arr, x) {
-  // YOUR CODE HERE
-  return null;
+  arr.push(x);
+  return arr
 }
 
 // 14. Return the array WITHOUT its last item. [1, 2, 3] -> [1, 2]
 function withoutLast(arr) {
-  // YOUR CODE HERE
-  return null;
+  arr.pop()
+  return arr;
 }
 
 // 15. Return the sum of all numbers in the array. [1, 2, 3] -> 6
 function sumArray(arr) {
-  // YOUR CODE HERE
-  return null;
+  let total =0
+  for(const nums of arr){
+    total += nums
+  }
+  return total
 }
 
 // 16. Return a NEW array with every number doubled. [1, 2, 3] -> [2, 4, 6]
 function doubleAll(arr) {
-  // YOUR CODE HERE
-  return null;
+  const result = []
+  for(const nums of arr){
+    result.push(nums * 2)
+  }
+  return result
 }
 
 // 17. Return only the positive numbers (greater than 0). [1, -4, 7, 0] -> [1, 7]
 function onlyPositives(arr) {
-  // YOUR CODE HERE
-  return null;
+  positive=[];
+  for (const nums of arr){
+    if(nums > 0 ){
+      positive.push(nums)
+    }else{
+      continue
+    }
+  }
+  return positive
 }
 
 // 18. Return the smallest number in the array. [34, 15, 88, 2] -> 2
 function findSmallest(arr) {
-  // YOUR CODE HERE
-  return null;
+  champion=arr[0]
+  for(const nums of arr ){
+    if (nums < champion){
+      champion = nums; 
+    }
+  }
+  return champion
 }
 
 // 19. Sort numbers in ASCENDING order (smallest to largest). [10, 5, 20, 1] -> [1, 5, 10, 20]

@@ -16,32 +16,60 @@
 
 // 1.1 Sum all numbers in an array. [1, 2, 3, 4] -> 10
 function sumWithForOf(arr) {
-  // YOUR CODE HERE
-  return null;
+  total = 0;
+  for (const nums of arr){
+    total += nums;
+  }
+  return total;
 }
 
 // 1.2 Count how many strings have length > 3. ["cat", "zebra", "lion", "ox"] -> 2
 function countLongWords(words) {
-  // YOUR CODE HERE
-  return null;
+  let count = 0
+  for(const items of words){
+    if (items.length > 3){
+      count += 1
+    }else{
+      continue
+    }
+  }
+  return count
 }
 
 // 1.3 Find the maximum number in an array. [10, 45, 3, 89, 22] -> 89
 function maxWithForOf(arr) {
-  // YOUR CODE HERE
-  return null;
+  let champion = arr[0]
+  for(const nums of arr){
+    if(nums > champion){
+      champion = nums
+    }else{
+      continue 
+    }
+  }
+  return champion
 }
 
 // 1.4 Check if an array contains any negative number. [1, 4, -2, 8] -> true
 function hasNegativeNumber(arr) {
-  // YOUR CODE HERE
-  return null;
+  for(const nums of arr){
+    if(nums < 0){
+      return true
+    }
+  }
+  return false;
 }
 
 // 1.5 Join words with spaces into a single sentence. ["Code", "is", "fun"] -> "Code is fun"
 function joinWordsManual(words) {
-  // YOUR CODE HERE
-  return null;
+  let sentence ="";
+  for(const x of words){
+    if (sentence === ""){
+        sentence = word;
+    }else{
+      sentence += " " + word;
+    }
+  }
+  return sentence;
 }
 
 // ===========================================================================
@@ -49,33 +77,52 @@ function joinWordsManual(words) {
 // ===========================================================================
 
 // 2.1 Return an array with numbers from 1 up to n. 4 -> [1, 2, 3, 4]
-function rangeUpTo(n) {
-  // YOUR CODE HERE
-  return null;
+function rangeUpTo(n) {  
+  const result =[];
+  for(let i =1;i<= n;i++){
+    result.push(i);
+  }
+  return result;
 }
 
 // 2.2 Return every second item starting at index 0. ["a", "b", "c", "d", "e"] -> ["a", "c", "e"]
 function everyOtherItem(arr) {
-  // YOUR CODE HERE
-  return null;
+  const result =[];
+  for(let i = 0 ; i <= arr.length; i+=2){
+    result.push(arr[i] );
+  }
+  return result;
 }
 
 // 2.3 Sum adjacent pairs: [1, 2, 3, 4] -> [3, 5, 7]
 function adjacentPairSums(arr) {
-  // YOUR CODE HERE
-  return null;
+  let list = []
+  for(let i=0 ; i < arr.length-1; i++){
+    let sum = arr[i] + arr[i + 1];
+    list.push(sum);
+  }
+  return list;
 }
 
 // 2.4 Reverse an array using a backwards loop. [1, 2, 3] -> [3, 2, 1]
 function reverseWithLoop(arr) {
-  // YOUR CODE HERE
-  return null;
+  const result = [];
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    result.push(arr[i]);
+  }
+
+  return result;
 }
 
 // 2.5 Find the index of the first occurrence of target, or -1. ([10, 20, 30], 20) -> 1
 function indexOfManual(arr, target) {
-  // YOUR CODE HERE
-  return null;
+  for(let i =0; i < arr.length;i++){
+    if(arr[i] === target){
+      return i
+    }
+  }
+  return -1
 }
 
 // ===========================================================================
@@ -84,26 +131,47 @@ function indexOfManual(arr, target) {
 
 // 3.1 Keep halving a number (integer division) until it reaches 1. Count steps. 16 -> 4 (16->8->4->2->1)
 function countHalvings(n) {
-  // YOUR CODE HERE
-  return null;
+  let steps = 0
+  while (n > 1){
+    n =Math.floor(n/2);
+    steps++;
+  }
+  return steps
 }
 
 // 3.2 Sum the digits of a number. 123 -> 6
 function sumDigitsWithWhile(n) {
-  // YOUR CODE HERE
-  return null;
+  let sum = 0;
+  while(n>0){
+    const digit = n % 10
+    sum += digit
+    n= Math.floor(n/10)
+  }
+  return sum
 }
 
 // 3.3 Investment growth: deposit grows by rate% each year. Years until threshold? (100, 20, 150) -> 3
 function yearsToGrow(deposit, rate, threshold) {
-  // YOUR CODE HERE
-  return null;
+  let years = 0 ;  
+  let balance = deposit;
+  while(balance < threshold){
+    balance += balance *(rate/100);
+    years++;
+  }
+  return years;
 }
 
 // 3.4 Reverse a positive number mathematically using while: 1234 -> 4321
 function reverseNumberMath(n) {
-  // YOUR CODE HERE
-  return null;
+  let reversed = 0;
+
+  while (n > 0) {
+    const digit = n % 10;
+    reversed = reversed * 10 + digit; // Shift left and add digit
+    n = Math.floor(n / 10);            // Chop off the last digit
+  }
+
+  return reversed;
 }
 
 // ===========================================================================
@@ -112,32 +180,27 @@ function reverseNumberMath(n) {
 
 // 4.1 Double all numbers: [1, 2, 3] -> [2, 4, 6]
 function doubleWithMap(arr) {
-  // YOUR CODE HERE
-  return null;
+  return arr.map(items => items * 2);
 }
 
 // 4.2 Convert all strings to uppercase: ["hi", "dev"] -> ["HI", "DEV"]
 function uppercaseWithMap(arr) {
-  // YOUR CODE HERE
-  return null;
+  return arr.map(items => items.toUpperCase());
 }
 
 // 4.3 Extract lengths of words: ["apple", "pie"] -> [5, 3]
 function wordLengthsWithMap(words) {
-  // YOUR CODE HERE
-  return null;
+  return words.map(items => items.length);
 }
 
 // 4.4 Extract names from user objects: [{name: "Ama"}, {name: "Eric"}] -> ["Ama", "Eric"]
 function extractNamesWithMap(users) {
-  // YOUR CODE HERE
-  return null;
+  return users.map(items => items["name"]);
 }
 
 // 4.5 Add tax (18%) to all prices, rounded to 2 decimals: [100, 50] -> [118, 59]
 function addTaxWithMap(prices) {
-  // YOUR CODE HERE
-  return null;
+  return prices.map(items => items += items * (18/100));
 }
 
 // ===========================================================================
@@ -146,32 +209,27 @@ function addTaxWithMap(prices) {
 
 // 5.1 Keep only even numbers: [1, 2, 3, 4, 5] -> [2, 4]
 function onlyEvensWithFilter(arr) {
-  // YOUR CODE HERE
-  return null;
+  return arr.filter(items => items % 2 === 0);
 }
 
 // 5.2 Keep only words with more than 3 letters: ["a", "dog", "elephant"] -> ["elephant"]
 function longWordsWithFilter(words) {
-  // YOUR CODE HERE
-  return null;
+  return words.filter(items => items.length > 3);
 }
 
 // 5.3 Filter out null and undefined values: [1, null, 2, undefined, 3] -> [1, 2, 3]
 function removeNullishWithFilter(arr) {
-  // YOUR CODE HERE
-  return null;
+  return arr.filter(items=> items != null && items != undefined);
 }
 
 // 5.4 Keep only products that are in stock: [{id: 1, inStock: true}, {id: 2, inStock: false}]
 function inStockProductsWithFilter(products) {
-  // YOUR CODE HERE
-  return null;
+  return products.filter(items => items.inStock === true);
 }
 
 // 5.5 Keep only numbers within range [min, max] inclusive: ([10, 5, 25, 30], 10, 25) -> [10, 25]
 function numbersInRangeWithFilter(nums, min, max) {
-  // YOUR CODE HERE
-  return null;
+  return nums.filter(items => items>= min && items<= max);
 }
 
 // ===========================================================================
@@ -180,32 +238,30 @@ function numbersInRangeWithFilter(nums, min, max) {
 
 // 6.1 Sum all numbers: [1, 2, 3, 4] -> 10
 function sumWithReduce(arr) {
-  // YOUR CODE HERE
-  return null;
+  return arr.reduce((total,items)=> total+items , 0);
 }
 
 // 6.2 Multiply all numbers (product): [2, 3, 4] -> 24
 function productWithReduce(arr) {
-  // YOUR CODE HERE
-  return null;
+  return arr.reduce((Multiply,items)=> Multiply * items,1);
 }
 
 // 6.3 Find the maximum number using reduce: [5, 12, 8, 130, 44] -> 130
 function maxWithReduce(arr) {
-  // YOUR CODE HERE
-  return null;
+  return arr.reduce((max, item) => (item > max ? item : max));
 }
 
 // 6.4 Count occurrences of items into an object: ["a", "b", "a"] -> { a: 2, b: 1 }
 function frequencyWithReduce(arr) {
-  // YOUR CODE HERE
-  return null;
+  return arr.reduce((acc, item) => {
+    acc[item] = (acc[item] || 0) + 1;
+    return acc;
+  }, {}); // <-- Start with an empty object {}
 }
 
 // 6.5 Flatten an array of arrays one level: [[1, 2], [3, 4]] -> [1, 2, 3, 4]
-function flattenWithReduce(arr) {
-  // YOUR CODE HERE
-  return null;
+  function flattenWithReduce(arr) {
+  return arr.reduce((acc, curr) => acc.concat(curr), []);
 }
 
 // ===========================================================================

@@ -102,3 +102,4 @@ for (const [fn, args, expected] of TESTS) {
 console.log("\n------------------------------------------");
 console.log(`SCORE: ${passed} / ${TESTS.length} tests passed.`);
 console.log("------------------------------------------\n");
+

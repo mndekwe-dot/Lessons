@@ -53,3 +53,4 @@ module.exports = {
   firstDigit,
   alternatingSums
 };
+

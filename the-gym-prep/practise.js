@@ -1,5 +1,7 @@
-const multipy = (a, b) =>  a * b;
-const square = (x) => x ** x;
-
-console.log(multipy(2, 5));
-console.log(square(2));
+let sentence = "the apple sat"
+function longestWordIn(sentence) {
+    // The longest word. "the apple sat" -> "apple"
+    new_string = sentence.split("")
+}    
+//results = adjacentSums([1,2,3,4]);
+console.log(sentence.split(""));

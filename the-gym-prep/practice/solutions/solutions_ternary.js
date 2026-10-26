@@ -77,3 +77,4 @@ module.exports = {
   mapEvenOrOdd,
   clampMax100
 };
+
