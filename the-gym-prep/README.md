@@ -46,6 +46,7 @@ You will submit an application form requiring:
 | 11 | [`11-javascript-glossary.md`](11-javascript-glossary.md) | Terminology Glossary | Clear definitions of all technical jargon (closures, hoisting, coercion, callbacks). |
 | 12 | [`12-mock-interview-simulation.md`](12-mock-interview-simulation.md) | Mock Interview Test | 45-minute timed simulation with theory questions, coding challenges, and scoring rubric. |
 | 13 | [`13-javascript-patterns.md`](13-javascript-patterns.md) | Loop & Algorithm Patterns | The 5 fundamental loop patterns (accumulator, filter, transformer, champion, search) and algorithm weapons. |
+| 14 | [`14-codesignal-javascript-guide.md`](14-codesignal-javascript-guide.md) | CodeSignal GCA in JS | The complete AmaliTech CodeSignal assessment guide in JavaScript (Q1, Q2, Q3 2D grids, Q4 hash maps). |
 
 ---
 
