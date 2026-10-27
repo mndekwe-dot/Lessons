@@ -312,5 +312,94 @@ while (balance < threshold) { ... }
 ```
 **The Rule:** `while` runs when the condition is **TRUE**, not when it is false. Ask: *"Under what condition should this loop keep running?"*
 
+---
+
+## ⚠️ MISTAKE 19: Putting the Container Outside the Function (The 3 Zones Rule) ⚠️
+
+When you hear *"Put `const list = []` outside the loop"*, do NOT put it outside the **function**!
+
+```javascript
+// ❌ ZONE 1: OUTSIDE THE FUNCTION (Wrong!)
+// Why it fails: When CodeWars/CodeSignal runs Test 2, old items from Test 1 are still inside list!
+let list = [];
+
+function solve(nums) {
+  // ✅ ZONE 2: INSIDE THE FUNCTION, BEFORE THE LOOP (100% Correct!)
+  // Every function call gets a brand-new, clean empty array.
+  const list = [];
+
+  for (const num of nums) {
+    // ❌ ZONE 3: INSIDE THE LOOP (Wrong!)
+    // Wipes the array clean on every single turn of the loop!
+    const list = [];
+  }
+
+  return list;
+}
+```
+**The Rule:** Always place your container (`const list = []` or `let total = 0`) on **Line 1 inside the function**, right above your `for` or `while` loop.
+
+---
+
+## ⚠️ MISTAKE 20: Reordering Items — Nested `if` Traps & The "1 Bag vs. 2 Bags" Rule ⚠️
+
+### Trap A: Nesting Opposites Inside Each Other
+```javascript
+// WRONG:
+if (num !== 0) {
+  list.push(num);
+  if (num === 0) { // <-- IMPOSSIBLE! A number inside (num !== 0) can never be 0!
+    list.push(num);
+  }
+}
+```
+
+### Trap B: Why Rearranging Groups Needs Either 2 Loops OR 2 Bags
+If you want to move all `0`s to the end (`[0, 1, 0, 3, 12] -> [1, 3, 12, 0, 0]`):
+- A loop walks from left to right. If you only have **1 bag** (`list`) and **1 loop**, pushing `0` when you see it puts `0` at the **front**, not the back!
+
+You have two clean choices:
+
+#### Option 1: 1 Bag + 2 Separate Loops (Two Walks)
+```javascript
+function moveZerosToEnd(nums) {
+  const list = []; // 1 Bag
+
+  // Walk 1: Pick up ONLY non-zeros -> [1, 3, 12]
+  for (const num of nums) {
+    if (num !== 0) list.push(num);
+  }
+
+  // Walk 2 (AFTER Walk 1 finishes): Pick up ONLY zeros -> [1, 3, 12, 0, 0]
+  for (const num of nums) {
+    if (num === 0) list.push(num);
+  }
+
+  return list;
+}
+```
+
+#### Option 2: 2 Bags + 1 Loop (Sort on the Spot, Join at the End)
+```javascript
+function moveZerosToEnd(nums) {
+  const nonZeros = []; // Bag 1
+  const zeros = [];    // Bag 2
+
+  for (const num of nums) {
+    if (num !== 0) {
+      nonZeros.push(num);
+    } else {
+      zeros.push(num);
+    }
+  }
+
+  return nonZeros.concat(zeros); // Glue Bag 1 + Bag 2 at the end!
+}
+```
+**The Rule:**
+- **1 Bag** requires **2 Loops** (finish collecting Group 1 first, then start a second loop for Group 2).
+- **2 Bags** requires **1 Loop** (put Group 1 in Bag A, Group 2 in Bag B, then `.concat()` them at the end).
+
+
 
 
