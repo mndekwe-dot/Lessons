@@ -1,86 +1,121 @@
-# The Gym Rwanda — JavaScript Preparation Course
+# The Gym Rwanda + AmaliTech GCA — JavaScript Preparation Course
 
-A comprehensive, beginner-friendly preparation course designed specifically for applicants to **The Gym Rwanda**.
+A beginner-friendly JavaScript course for two assessments:
+1. **The Gym Rwanda**: application video, CodeWars profile, theory interview, live coding.
+2. **AmaliTech CodeSignal GCA**: 4 timed coding questions (Q1 basic → Q4 problem solving).
 
-This course mirrors the structure and rigor of your Python preparation while matching the exact requirements of The Gym's selection process:
-1. **JavaScript Fundamentals** (aligned with the Udacity *Intro to JavaScript* [ud803] curriculum).
-2. **Technical Interview Theory** (spoken questions about how JavaScript works under the hood).
-3. **Live Coding Challenge** (solving algorithm challenges similar to [CodeWars](https://www.codewars.com/) 8 kyu and 7 kyu katas).
-4. **Python-to-JavaScript Translation Bridges** (since you already know Python, every concept shows how your Python knowledge translates into JavaScript).
+Every concept shows how your Python knowledge maps to JavaScript.
+
+---
+
+## How to Use This Course
+
+> **One folder = one step.** Each folder holds the lesson *and* its drills, numbered in order.
+> Finish a folder, then open the next. Check `solutions/` only **after** trying.
+
+Start every session with [`00-start-here/1-personal-checklist.md`](00-start-here/1-personal-checklist.md) open next to the code.
+
+```
+00-start-here  →  01-foundations  →  02-strings-and-arrays  →  03-objects-maps-sets
+               →  04-patterns     →  05-codesignal-gca      →  06-the-gym-interview
+```
+
+Run any drill from the repo root:
+```bash
+node the-gym-prep/01-foundations/2-drills-js-basics.js
+```
+
+---
+
+## The Roadmap
+
+### Step 00 — Start Here (habits & syntax reflexes first)
+| # | File | What it gives you |
+|---|---|---|
+| 1 | [`1-personal-checklist.md`](00-start-here/1-personal-checklist.md) | Trace-first routine, pre-submit checklist, "methods I forget" list, daily routine |
+| 2 | [`2-my-common-js-mistakes.md`](00-start-here/2-my-common-js-mistakes.md) | The traps that fail interviews, with examples (`sort()` on numbers, `==` vs `===`, 3 Zones Rule...) |
+| 3 | [`3-drills-syntax-reflexes.js`](00-start-here/3-drills-syntax-reflexes.js) | 20 daily muscle-memory drills targeting exact syntax & spelling slips (`lenght`, `includes`, `repeat`, `%`, `sort`) |
+
+### Step 01 — Foundations
+| # | File | Focus |
+|---|---|---|
+| 1 | [`1-lesson-javascript-essentials.md`](01-foundations/1-lesson-javascript-essentials.md) | `let`/`const`, types, operators, `if`/`else`, truthy/falsy, `===` |
+| 2 | [`2-drills-js-basics.js`](01-foundations/2-drills-js-basics.js) | Basic drills |
+| 3 | [`3-drills-ternary.js`](01-foundations/3-drills-ternary.js) | 1-line `if/else`, pluralization, chaining |
+| 4 | [`4-drills-common-mistakes.js`](01-foundations/4-drills-common-mistakes.js) | Variables, types, scope, equality traps |
+| 5 | [`5-lesson-loops-and-functions.md`](01-foundations/5-lesson-loops-and-functions.md) | `for`, `while`, `for...of`, functions, arrow functions, scope |
+| 6 | [`6-drills-loops-and-methods.js`](01-foundations/6-drills-loops-and-methods.js) | Loop drills, `map` / `filter` / `reduce` |
+
+### Step 02 — Strings & Arrays
+| # | File | Focus |
+|---|---|---|
+| 1 | [`1-lesson-strings-and-arrays.md`](02-strings-and-arrays/1-lesson-strings-and-arrays.md) | String & array methods, `slice` vs `splice` |
+| 2 | [`2-drills-strings-arrays.js`](02-strings-and-arrays/2-drills-strings-arrays.js) | Slicing, splitting, joining, reversing |
+| 3 | [`3-drills-list-rearranging.js`](02-strings-and-arrays/3-drills-list-rearranging.js) | Move zeros, evens/odds, rotate, swap, interleave |
+
+### Step 03 — Objects, Maps & Sets
+| # | File | Focus |
+|---|---|---|
+| 1 | [`1-lesson-objects-and-data-structures.md`](03-objects-maps-sets/1-lesson-objects-and-data-structures.md) | Dot vs bracket notation, `Object.keys`, value vs reference, Set, Map |
+| 2 | [`2-drills-objects-maps.js`](03-objects-maps-sets/2-drills-objects-maps.js) | Object & Map drills |
+| 3 | [`3-drills-dicts-sets.js`](03-objects-maps-sets/3-drills-dicts-sets.js) | Tally sheets, key lookups, unique sets |
+
+### Step 04 — Patterns
+| # | File | Focus |
+|---|---|---|
+| 1 | [`1-lesson-javascript-patterns.md`](04-patterns/1-lesson-javascript-patterns.md) | The 5 loop patterns: accumulator, filter, transformer, champion, search |
+| 2 | [`2-drills-grids.js`](04-patterns/2-drills-grids.js) | 2D grids, directions, neighbour cells |
+
+### Step 05 — AmaliTech CodeSignal GCA
+| # | File | Focus |
+|---|---|---|
+| 0 | [`0-guide-codesignal-javascript.md`](05-codesignal-gca/0-guide-codesignal-javascript.md) | How the GCA works, Q1–Q4 strategy |
+| 1 | [`1-q1-warmups.js`](05-codesignal-gca/1-q1-warmups.js) | Century, leap year, digits |
+| 2 | [`2-q1-gca-basic.js`](05-codesignal-gca/2-q1-gca-basic.js) | Real GCA Q1 problems |
+| 3 | [`3-q2-data-manipulation.js`](05-codesignal-gca/3-q2-data-manipulation.js) | Anagrams, longest strings, borders |
+| 4 | [`4-q2-gca-data-manipulation.js`](05-codesignal-gca/4-q2-gca-data-manipulation.js) | Real GCA Q2 problems |
+| 5 | [`5-q3-implementation.js`](05-codesignal-gca/5-q3-implementation.js) | Minesweeper, haunted matrix, spirals |
+| 6 | [`6-q3-gca-implementation.js`](05-codesignal-gca/6-q3-gca-implementation.js) | Real GCA Q3 problems |
+| 7 | [`7-q4-problem-solving.js`](05-codesignal-gca/7-q4-problem-solving.js) | Sliding window, two pointers |
+| 8 | [`8-q4-gca-problem-solving.js`](05-codesignal-gca/8-q4-gca-problem-solving.js) | Real GCA Q4 problems (hash maps) |
+| 9 | [`9-mock-test-gca.js`](05-codesignal-gca/9-mock-test-gca.js) | Full 70-minute mock exam |
+
+### Step 06 — The Gym Interview
+| # | File | Focus |
+|---|---|---|
+| 1 | [`1-application-video-script.md`](06-the-gym-interview/1-application-video-script.md) | Video script, recording tips, CodeWars profile setup |
+| 2 | [`2-codewars-kata-playbook.md`](06-the-gym-interview/2-codewars-kata-playbook.md) | 5 kata patterns + 10 katas solved step by step |
+| 3 | [`3-codewars-practice.js`](06-the-gym-interview/3-codewars-practice.js) | 10 classic 8/7 kyu katas |
+| 4 | [`4-interview-theory-qa.md`](06-the-gym-interview/4-interview-theory-qa.md) | Spoken theory questions with model answers |
+| 5 | [`5-mock-interview-simulation.md`](06-the-gym-interview/5-mock-interview-simulation.md) | 45-minute timed simulation + scoring rubric |
+| 6 | [`6-mock-interview-test.js`](06-the-gym-interview/6-mock-interview-test.js) | Timed live-coding challenge |
+
+### Reference (open any time)
+| File | Use |
+|---|---|
+| [`cheat-sheet.md`](reference/cheat-sheet.md) | 1-page syntax reference |
+| [`glossary.md`](reference/glossary.md) | Closures, hoisting, coercion, callbacks... |
+| [`udacity-ud803-summary.md`](reference/udacity-ud803-summary.md) | Udacity *Intro to JavaScript* notes |
+
+### Solutions (only after trying!)
+[`solutions/`](solutions/) mirrors the step folders, e.g. the answer to `01-foundations/6-drills-loops-and-methods.js` is `solutions/01-foundations/6-drills-loops-and-methods.js`. Extra explanations: [`solutions_drills_explained.md`](solutions/solutions_drills_explained.md).
 
 ---
 
 ## The Selection Process at The Gym
 
-The selection process has two stages:
-
 ### Stage 1: The Application Form
-You will submit an application form requiring:
-1. **A short video of yourself:** Verifying your English proficiency and communication skills (see [`08-application-video-script.md`](08-application-video-script.md) for word-for-word script).
-2. **Your CodeWars profile link:** Showcasing that you have solved simple algorithm challenges.
-3. **Personal background:** Why you want to join and your commitment to the 20–25 hours/week schedule.
+1. **A short video of yourself:** shows English and communication skills (script: [`1-application-video-script.md`](06-the-gym-interview/1-application-video-script.md)).
+2. **Your CodeWars profile link:** shows solved algorithm challenges.
+3. **Personal background:** why you want to join, and commitment to 20–25 hours/week.
 
 ### Stage 2: The Assessment (Two Interviews)
-1. **The Technical Interview:**
-   - **Theoretical questions** on JavaScript Fundamentals (see [`05-interview-theory-qa.md`](05-interview-theory-qa.md)).
-   - **A live coding challenge** solved in real time in front of the interviewer (see [`06-codewars-kata-playbook.md`](06-codewars-kata-playbook.md) & [`12-mock-interview-simulation.md`](12-mock-interview-simulation.md)).
-2. **The Personal Interview:**
-   - Assessing motivation, mindset, teamwork, and spoken English communication.
+1. **Technical Interview:** theory questions ([`4-interview-theory-qa.md`](06-the-gym-interview/4-interview-theory-qa.md)) and a live coding challenge ([`2-codewars-kata-playbook.md`](06-the-gym-interview/2-codewars-kata-playbook.md), [`5-mock-interview-simulation.md`](06-the-gym-interview/5-mock-interview-simulation.md)).
+2. **Personal Interview:** motivation, mindset, teamwork and spoken English.
 
 ---
 
-## Course Navigation
-
-| # | File | Topic | What you learn |
-|---|---|---|---|
-| 01 | [`01-javascript-essentials.md`](01-javascript-essentials.md) | Basics & Types | Variables (`let`/`const`), primitive types, operators, `if`/`else`, truthy/falsy, `===` vs `==`. |
-| 02 | [`02-loops-and-functions.md`](02-loops-and-functions.md) | Control Flow & Functions | `for`, `while`, `for...of`, regular functions, arrow functions (`=>`), scope, and closures. |
-| 03 | [`03-strings-and-arrays.md`](03-strings-and-arrays.md) | Sequences & Methods | String methods, array methods (`push`, `pop`, `shift`, `unshift`, `slice`, `splice`, `map`, `filter`, `reduce`). |
-| 04 | [`04-objects-and-data-structures.md`](04-objects-and-data-structures.md) | Objects & References | Object literals, dot vs bracket notation, `Object.keys`, value vs reference, Sets and Maps. |
-| 05 | [`05-interview-theory-qa.md`](05-interview-theory-qa.md) | Spoken Theory Q&A | The top theoretical interview questions with model spoken English answers. |
-| 06 | [`06-codewars-kata-playbook.md`](06-codewars-kata-playbook.md) | Live Coding Playbook | The 5 core Kata patterns and 10 real Codewars katas solved step-by-step. |
-| 07 | [`07-udacity-ud803-summary.md`](07-udacity-ud803-summary.md) | Udacity ud803 Notes | Complete summary of all Udacity lessons and quizzes in case of login issues. |
-| 08 | [`08-application-video-script.md`](08-application-video-script.md) | Video & Profile Guide | Spoken English video script, recording tips, and CodeWars profile setup checklist. |
-| 09 | [`09-javascript-cheat-sheet.md`](09-javascript-cheat-sheet.md) | Quick Cheat Sheet | 1-page quick syntax reference for last-minute review. |
-| 10 | [`10-my-common-js-mistakes.md`](10-my-common-js-mistakes.md) | Common JS Mistakes | The 10 traps that fail interviews (`sort()` on numbers, `==` vs `===`, mutating references). |
-| 11 | [`11-javascript-glossary.md`](11-javascript-glossary.md) | Terminology Glossary | Clear definitions of all technical jargon (closures, hoisting, coercion, callbacks). |
-| 12 | [`12-mock-interview-simulation.md`](12-mock-interview-simulation.md) | Mock Interview Test | 45-minute timed simulation with theory questions, coding challenges, and scoring rubric. |
-| 13 | [`13-javascript-patterns.md`](13-javascript-patterns.md) | Loop & Algorithm Patterns | The 5 fundamental loop patterns (accumulator, filter, transformer, champion, search) and algorithm weapons. |
-| 14 | [`14-codesignal-javascript-guide.md`](14-codesignal-javascript-guide.md) | CodeSignal GCA in JS | The complete AmaliTech CodeSignal assessment guide in JavaScript (Q1, Q2, Q3 2D grids, Q4 hash maps). |
-
----
-
-## Interactive Practice Drills (1-to-1 Parity with Python)
-
-Every single assignment and drill in Python has an exact counterpart in JavaScript. Run these drills directly in your terminal using Node.js:
-
-| JavaScript Practice File | Matching Python File | Focus | Command to Run |
-|---|---|---|---|
-| [`practice/drills_common_mistakes.js`](practice/drills_common_mistakes.js) | `practice/drills_common_mistakes.py` | Variables, types, scope, equality | `node the-gym-prep/practice/drills_common_mistakes.js` |
-| [`practice/drills_ternary.js`](practice/drills_ternary.js) | Ternary Operator Mastery | 1-line `if/else`, comparisons, pluralization, chaining | `node the-gym-prep/practice/drills_ternary.js` |
-| [`practice/drills_loops_and_methods.js`](practice/drills_loops_and_methods.js) | Loop Mastery | `for`, `while`, `map`, `filter`, `reduce` drills | `node the-gym-prep/practice/drills_loops_and_methods.js` |
-| [`practice/drills_strings_arrays.js`](practice/drills_strings_arrays.js) | `practice/drills_strings_lists.py` | Slicing, splitting, joining, reversing | `node the-gym-prep/practice/drills_strings_arrays.js` |
-| [`practice/drills_dicts_sets.js`](practice/drills_dicts_sets.js) | `practice/drills_dicts_sets.py` | Tally sheets, key lookups, unique sets | `node the-gym-prep/practice/drills_dicts_sets.js` |
-| [`practice/drills_grids.js`](practice/drills_grids.js) | `practice/drills_grids.py` | 2D matrices, directions, neighbor cells | `node the-gym-prep/practice/drills_grids.js` |
-| [`practice/q1_warmups.js`](practice/q1_warmups.js) | `practice/q1_warmups.py` | Basic warmups (century, leap year, digits) | `node the-gym-prep/practice/q1_warmups.js` |
-| [`practice/gca_q1_basic.js`](practice/gca_q1_basic.js) | `practice/gca_q1_basic.py` | GCA Q1 basic problems | `node the-gym-prep/practice/gca_q1_basic.js` |
-| [`practice/q2_data_manipulation.js`](practice/q2_data_manipulation.js) | `practice/q2_data_manipulation.py` | Q2 strings & borders (anagrams, longest strings) | `node the-gym-prep/practice/q2_data_manipulation.js` |
-| [`practice/q2b_list_rearranging.js`](practice/q2b_list_rearranging.js) | `practice/q2b_list_rearranging.py` | Array rearranging (move zeros, evens/odds, rotate) | `node the-gym-prep/practice/q2b_list_rearranging.js` |
-| [`practice/gca_q2_data_manipulation.js`](practice/gca_q2_data_manipulation.js) | `practice/gca_q2_data_manipulation.py` | GCA Q2 string & list algorithms | `node the-gym-prep/practice/gca_q2_data_manipulation.js` |
-| [`practice/q3_implementation.js`](practice/q3_implementation.js) | `practice/q3_implementation.py` | Q3 grids (minesweeper, haunted matrix, spirals) | `node the-gym-prep/practice/q3_implementation.js` |
-| [`practice/gca_q3_implementation.js`](practice/gca_q3_implementation.js) | `practice/gca_q3_implementation.py` | GCA Q3 grid & simulation problems | `node the-gym-prep/practice/gca_q3_implementation.js` |
-| [`practice/q4_problem_solving.js`](practice/q4_problem_solving.js) | `practice/q4_problem_solving.py` | Q4 optimization (sliding window, two pointers) | `node the-gym-prep/practice/q4_problem_solving.js` |
-| [`practice/gca_q4_problem_solving.js`](practice/gca_q4_problem_solving.js) | `practice/gca_q4_problem_solving.py` | GCA Q4 optimal algorithms & hash maps | `node the-gym-prep/practice/gca_q4_problem_solving.js` |
-| [`practice/mock_test_gca.js`](practice/mock_test_gca.js) | `practice/mock_answers.py` | Full 70-min CodeSignal GCA Mock Exam in JS | `node the-gym-prep/practice/mock_test_gca.js` |
-| [`practice/codewars_practice.js`](practice/codewars_practice.js) | Codewars 8/7 kyu | 10 classic Codewars algorithm katas | `node the-gym-prep/practice/codewars_practice.js` |
-| [`practice/mock_interview_test.js`](practice/mock_interview_test.js) | Timed Assessment | Timed coding challenge for live technical interviews | `node the-gym-prep/practice/mock_interview_test.js` |
-| [`practice/solutions/solutions_drills_explained.md`](practice/solutions/solutions_drills_explained.md) | Solutions & Notes | Complete solution code with explanations | Reference when stuck |
-
----
-
-## Quick Reference: Python to JavaScript Cheat Sheet
-
-Since you already know Python, keep this table handy:
+## Quick Reference: Python to JavaScript
 
 | Concept | Python | JavaScript |
 |---|---|---|
